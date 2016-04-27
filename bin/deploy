@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ ! $(git remote) =~ /origin2/ ]]; then
+if [[ ! $(git remote) =~ "origin" ]]; then
   echo "ERROR: no 'origin' remote was found"
   exit 1
 fi
