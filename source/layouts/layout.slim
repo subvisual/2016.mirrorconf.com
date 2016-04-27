@@ -1,39 +1,42 @@
 doctype 5
-html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
+html.Theme itemscope="" itemtype="http://schema.org/WebPage" lang=data.site.language
   head
-    meta charset='utf-8'
-    meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
     // Mobile Specific Metas
-    meta name='viewport' content='width=device-width, initial-scale=1'
+    meta name="viewport" content="width=device-width, initial-scale=1"
 
     = stylesheet_link_tag 'all'
-    link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'
+    link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel='stylesheet' type="text/css"
     = yield_content :stylesheets
 
     title="Mirror Conf"
 
-    meta name='description' content="Mirror Conf"
-    meta name='robots' content='index,follow'
+    meta name="description" content="Mirror Conf"
+    meta name="robots" content='index,follow'
 
     // Twitter
-    meta name='twitter:card' content="summary"
-    meta name='twitter:site' content=""
-    meta name='twitter:title' content="Mirror Conf"
-    meta name='twitter:description' content="TODO"
-    meta name='twitter:creator' content="TODO"
+    meta name="twitter:card" content="summary_large_image"
+    meta name="twitter:site" content="@mirrorconf"
+    meta name="twitter:title" content="Mirror Conf"
+    meta name="twitter:description" content="TODO"
+    meta name="twitter:creator" content="TODO"
+    // Twitter Summary card images must be at least 120x120px -->
+    meta name="twitter:image" content="TODO"
 
     // Open Graph General (Facebook & Pinterest)
-    meta property='og:url' content="http://mirrorconf.com"
-    meta property='og:title' content="Mirror Conf"
-    meta property='og:description' content="TODO"
-    meta property='og:site_name' content="TODO"
-    meta property='og:image' content="TODO"
-    meta property='fb:admins' content="TODO"
-    meta property='og:type' content='website'
+    meta property="og:title" content="Mirror Conf"
+    meta property="og:type" content='website'
+    meta property="og:url" content="http://mirrorconf.com"
+    meta property="og:image" content="TODO"
+    meta property="og:description" content="TODO"
+    meta property="og:site_name" content="TODO"
+    meta property="fb:admins" content="TODO"
+
     // Google Plus
-    meta itemprop='name' content="TODO"
-    meta itemprop='description' content="TODO"
-    meta itemprop='image' content="TODO"
+    meta itemprop="name" content="TODO"
+    meta itemprop="description" content="TODO"
+    meta itemprop="image" content="TODO"
 
     javascript:
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -46,10 +49,10 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
 
     // Preferred URL (rel="canonical")
     - if current_page.data.preferred_url
-      link rel='canonical' href=current_page.data.preferred_url
+      link rel="canonical" href=current_page.data.preferred_url
 
-    = favicon_tag 'favicon.ico'
-    = favicon_tag 'favicon.ico', rel: 'apple-touch-icon', type: 'image/x-icon'
+    = favicon_tag "favicon.ico"
+    = favicon_tag "favicon.ico", rel: "apple-touch-icon", type: "image/x-icon"
 
   body class=page_classes
     /[if lt IE 10]
@@ -63,5 +66,5 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
     javascript:
       try{Typekit.load({ async: true });}catch(e){}
 
-    = javascript_include_tag 'all'
+    = javascript_include_tag "all"
     = yield_content :javascripts
