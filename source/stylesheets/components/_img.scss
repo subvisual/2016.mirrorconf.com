@@ -1,4 +1,8 @@
 $Imgs: (
+  'logo': (
+    width: (40px, 60px),
+    height: (40px, 60px)
+  ),
   'icons/facebook': (
     width: (20px, 30px),
     height: (20px, 30px)
@@ -21,20 +25,12 @@ $Imgs: (
 
 @each $key, $values in $Imgs {
   .Img.#{str-replace($key, '/', '-')} {
-    @include responsive-background-image('/images/#{$key}', 'svg');
+    // @include responsive-background-image('/images/#{$key}', 'svg');
     @include responsive($values);
 
+    background-image: url('/images/#{$key}.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
-}
-
-
-.Img.icons-facebook {
-  background-image: url('/images/icons/facebook.svg');
-}
-
-.Img.icons-twitter {
-  background-image: url('/images/icons/twitter.svg');
 }
