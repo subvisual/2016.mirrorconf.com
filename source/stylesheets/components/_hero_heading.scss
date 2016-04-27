@@ -1,0 +1,22 @@
+$HeroHeading-border: solid $color-white;
+
+$HeroHeading-values: (
+  border-width: (10px, 12px),
+  font-size: (50px, 180px),
+  height: (110px, 260px),
+  line-height: (110px, 260px),
+  padding: (0 20px, 0 90px)
+);
+
+.HeroHeading {
+  @include responsive($HeroHeading-values);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  border: $HeroHeading-border;
+
+  box-sizing: border-box;
+}

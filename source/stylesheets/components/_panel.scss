@@ -1,7 +1,32 @@
-$Panel-responsive: (
-  padding: (0 20px, 0 40px)
+$Panel-content-responsive: (
+  margin: (20px, 60px)
 );
 
-.Panel {
-  @include responsive($Panel-responsive);
+$Panel-colors: (
+  amaranth: $color-amaranth
+);
+
+@each $name, $color in $Panel-colors {
+  .Panel.#{$name} {
+    background-color: $color
+  }
+}
+
+.Panel.hero {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Panel-content {
+  @include responsive($Panel-content-responsive);
+
+  flex-grow: 1;
+}
+
+.Panel.hero .Panel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

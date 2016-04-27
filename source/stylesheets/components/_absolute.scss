@@ -1,0 +1,26 @@
+.Absolute {
+  position: absolute;
+}
+
+.Absolute.above {
+  top: 0;
+  transform: translateY(-100%);
+}
+
+.Absolute.below {
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.Absolute.at-right {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.Absolute.bottom {
+  bottom: 0;
+}
+
+.Absolute.right {
+  right: 0;
+}

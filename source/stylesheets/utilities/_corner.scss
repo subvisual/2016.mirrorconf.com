@@ -1,0 +1,23 @@
+.Corner {
+  position: absolute;
+}
+
+.Corner.bottom {
+  bottom: 0;
+}
+
+.Corner.left {
+  left: 0;
+}
+
+.Corner.top {
+  top: 0;
+}
+
+.Corner.right {
+  right: 0;
+}
+// .Corner.from-top-to-bottom {
+//   writing-mode: vertical-lr;
+//   -ms-writing-mode: tb;
+// }

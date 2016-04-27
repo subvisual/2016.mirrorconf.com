@@ -1,4 +1,12 @@
-$Img-plants: (
+$Imgs: (
+  'icons/facebook': (
+    width: (20px, 30px),
+    height: (20px, 30px)
+  ),
+  'icons/twitter': (
+    width: (20px, 30px),
+    height: (20px, 30px)
+  )
 );
 
 @function str-replace($string, $search, $replace: '') {
@@ -11,13 +19,22 @@ $Img-plants: (
   @return $string;
 }
 
-@each $key, $values in $Img-plants {
+@each $key, $values in $Imgs {
   .Img.#{str-replace($key, '/', '-')} {
-    @include responsive-background-image('/images/#{$key}');
+    @include responsive-background-image('/images/#{$key}', 'svg');
     @include responsive($values);
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+
+
+.Img.icons-facebook {
+  background-image: url('/images/icons/facebook.svg');
+}
+
+.Img.icons-twitter {
+  background-image: url('/images/icons/twitter.svg');
 }

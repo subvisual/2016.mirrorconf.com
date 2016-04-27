@@ -1,0 +1,26 @@
+$Rect-border: solid 2px $color-white;
+
+$Rect--hero-values: (
+  width: (40px, 80px),
+  height: (80px, 160px)
+);
+
+.Rect.hero {
+  @include responsive($Rect--hero-values);
+}
+
+.Rect.bottom {
+  border-bottom: $Rect-border;
+}
+
+.Rect.left {
+  border-left: $Rect-border;
+}
+
+.Rect.top {
+  border-top: $Rect-border;
+}
+
+.Rect.right {
+  border-right: $Rect-border;
+}

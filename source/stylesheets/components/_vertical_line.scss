@@ -1,0 +1,12 @@
+$VerticalLine-color: $color-white;
+
+$VerticalLine-values: (
+  height: 120px,
+  width: 2px
+);
+
+.VerticalLine {
+  @include responsive($VerticalLine-values);
+
+  background-color: $VerticalLine-color;
+}

@@ -1,14 +1,14 @@
 // scss-lint:disable TrailingSemicolon
 $default-font-sizes: (
   desktop: (
-    base: 18px,
-    large: 22px,
-    huge: 30px
+    small: 16px,
+    base: 20px,
+    large: 24px
   ),
   mobile: (
-    base: 14px,
-    large: 18px,
-    huge: 22px
+    small: 16px,
+    base: 16px,
+    large: 16px
   )
 );
 // scss-lint:enable TrailingSemicolon

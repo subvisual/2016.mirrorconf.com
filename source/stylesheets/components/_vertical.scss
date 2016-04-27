@@ -1,0 +1,7 @@
+.Vertical {
+  transform: rotate(90deg) translateX(-50%);
+}
+
+.Vertical.bottom-to-top {
+  transform: rotate(180deg);
+}

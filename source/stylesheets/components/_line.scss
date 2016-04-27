@@ -1,0 +1,33 @@
+$Line-color: $color-white;
+
+$Line--horizontal-values: (
+  height: 2px,
+  width: 120px
+);
+
+$Line--vertical-values: (
+  height: 120px,
+  width: 2px
+);
+
+.Line {
+  background-color: $Line-color;
+}
+
+.Line.horizontal {
+  @include responsive($Line--horizontal-values);
+}
+
+.Line.vertical {
+  @include responsive($Line--vertical-values);
+}
+
+.Line.from-top-to-bottom {
+  writing-mode: vertical-lr;
+  -ms-writing-mode: tb;
+}
+
+.Line.from-bottom-to-top {
+  writing-mode: sideways-lr;
+  -ms-writing-mode: tb-rl;
+}

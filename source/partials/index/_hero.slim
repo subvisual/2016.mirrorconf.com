@@ -1,1 +1,31 @@
-.Panel
+.Panel.hero.amaranth.u-relative
+  .Logo logo
+
+  .Panel-content.u-relative
+    .Corner.bottom.left
+      .Rect.hero.bottom.left.u-relative
+        .Absolute.above
+          .Flex.column.u-halfLeft
+            .Vertical.top-to-bottom
+              .Text.strong.u-noWrap Braga, Portugal
+            .u-smallPushBottom
+        .Absolute.at-right.bottom
+          .Flex.row
+            .u-smallPushRight
+            .Text.strong.u-noWrap.u-halfBottom 23 & 24 September | 2016
+
+    .Corner.top.right
+      .Rect.hero.top.right
+        .Absolute.below.right
+          .Flex.column.u-halfRight
+            .u-smallPushBottom
+            = link_to "", "#", target: "_blank", class: "Img icons-facebook"
+            .u-smallPushBottom
+            = link_to "", "#", target: "_blank", class: "Img icons-twitter"
+
+    .Flex.column.alignCenter
+      .HeroHeading mirror
+      .u-largePushBottom
+      p.Text.large.strong.center The conference for all web enthusiasts.
+      .u-basePushBottom
+      = link_to "Buy your ticket", "#", target: "_blank", class: "Button hero"

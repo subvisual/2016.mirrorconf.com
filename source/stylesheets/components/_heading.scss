@@ -1,9 +1,3 @@
 .Heading {
-  @include font('huge');
-}
-
-.Heading.primary {
-  @include font('huge');
-
-  font-weight: bold;
+  @include font('large');
 }
