@@ -1,0 +1,8 @@
+- text: Speakers
+  url: '/#speakers'
+
+- text: Buy Ticket
+  url: '/#tickets'
+
+- text: Sponsor Us
+  link_key: 'sponsor'

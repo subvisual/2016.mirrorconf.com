@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if ! hash bundle 2>/dev/null; then
+  gem install bundler
+fi
+
+if ! hash bower 2>/dev/null; then
+  npm install bower
+fi
+
+(bundle check &>/dev/null) || bundle install
+bower install
+npm install

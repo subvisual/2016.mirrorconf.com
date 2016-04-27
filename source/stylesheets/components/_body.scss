@@ -1,0 +1,7 @@
+body {
+  @include font('base');
+
+  color: $color-greyish-brown;
+
+  font-family: $font-family;
+}

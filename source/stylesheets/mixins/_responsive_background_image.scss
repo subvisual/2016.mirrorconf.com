@@ -1,0 +1,11 @@
+@mixin responsive-background-image($path, $extension: 'png', $size: contain) {
+  $regular_url: "#{$path}.#{$extension}";
+  $retina_url:  "#{$path}@2x.#{$extension}";
+
+  background-image: url($regular_url);
+  background-size: $size;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url($retina_url);
+  }
+}

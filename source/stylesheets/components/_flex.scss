@@ -1,0 +1,48 @@
+.Flex {
+  display: flex;
+}
+
+.Flex.row {
+  flex-direction: row;
+}
+
+.Flex.column {
+  flex-direction: column;
+}
+
+.Flex.row-desktop {
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.Flex.column-mobile {
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.Flex.wrap {
+  flex-wrap: wrap;
+}
+
+.Flex.alignCenter {
+  align-items: center;
+}
+
+.Flex.justifyCenter {
+  justify-content: center;
+}
+
+.Flex.justifyEnd {
+  justify-content: flex-end;
+}
+
+.Flex.spaceAround {
+  justify-content: space-around;
+}
+
+.Flex-grow {
+  flex-grow: 1;
+  max-width: 100%;
+}

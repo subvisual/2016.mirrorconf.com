@@ -1,0 +1,25 @@
+$Text--red-color: $color-dark-salmon;
+$Text--blue-color: $color-blue;
+$Text--grey-color: $color-grey;
+$Text--green-color: $color-greenish-teal;
+$Text--white-color: $color-white;
+
+.Text {
+  color: $color-greyish-brown;
+}
+
+.Text.large {
+  @include font('large');
+}
+
+.Text.huge {
+  @include font('huge');
+}
+
+.Text.strong {
+  font-weight: bold;
+}
+
+.Text.center {
+  text-align: center;
+}

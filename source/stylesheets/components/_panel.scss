@@ -1,0 +1,7 @@
+$Panel-responsive: (
+  padding: (0 20px, 0 40px)
+);
+
+.Panel {
+  @include responsive($Panel-responsive);
+}

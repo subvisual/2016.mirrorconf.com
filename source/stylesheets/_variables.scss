@@ -1,0 +1,25 @@
+// Points of reassembly
+@import 'include-media/dist/include-media';
+
+$breakpoints: (
+  'mobile': 650px,
+  'desktop': 1024px
+);
+
+$font-family: 'brandon-grotesque';
+
+// Spacing
+$space-small: 20px;
+$space-base: 40px;
+$space-large: 80px;
+$space-huge: 160px;
+
+$color-white: #fff;
+$color-grey: #999;
+$color-greyish-brown: #555;
+$color-sand: #fafaf5;
+$color-dark-salmon: #ce6261;
+$color-azure: #2aa7f0;
+$color-blue: #48d0f9;
+$color-greenish-teal: #39d26c;
+$color-seaweed: #19d374;

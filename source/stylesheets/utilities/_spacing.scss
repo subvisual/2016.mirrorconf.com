@@ -1,0 +1,65 @@
+$spacings: (
+  small: $space-small,
+  base: $space-base,
+  large: $space-large,
+  huge: $space-huge
+);
+
+@each $name, $value in $spacings {
+  .u-#{$name}PushBottomAlways {
+    margin-bottom: $value;
+  }
+
+  .u-#{$name}PaddingBottomAlways {
+    padding-bottom: $value;
+  }
+
+  .u-#{$name}PushBottom {
+    @include mobile {
+      margin-bottom: $value * 0.5;
+    }
+
+    @include desktop {
+      margin-bottom: $value;
+    }
+  }
+
+  .u-#{$name}PushRight {
+    @include mobile {
+      margin-right: $value * 0.5;
+    }
+
+    @include desktop {
+      margin-right: $value;
+    }
+  }
+
+  .u-#{$name}PaddingBottom {
+    @include mobile {
+      padding-bottom: $value * 0.5;
+    }
+
+    @include desktop {
+      padding-bottom: $value;
+    }
+  }
+
+
+  .u-#{$name}PushBottom-desktop {
+    @include desktop {
+      margin-bottom: $value;
+    }
+  }
+
+  .u-#{$name}PushRight-desktop {
+    @include desktop {
+      margin-right: $value;
+    }
+  }
+
+  .u-#{$name}PushAround-mobile {
+    @include mobile {
+      margin: $value;
+    }
+  }
+}

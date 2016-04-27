@@ -1,0 +1,38 @@
+// scss-lint:disable TrailingSemicolon
+$default-font-sizes: (
+  desktop: (
+    base: 18px,
+    large: 22px,
+    huge: 30px
+  ),
+  mobile: (
+    base: 14px,
+    large: 18px,
+    huge: 22px
+  )
+);
+// scss-lint:enable TrailingSemicolon
+
+@mixin font($size: 'base', $font-sizes: $default-font-sizes, $line-height: true, $responsive: true) {
+  $mobile-size: map-get(map-get($font-sizes, 'mobile'), $size);
+  $desktop-size: map-get(map-get($font-sizes, 'desktop'), $size);
+
+  @if ($responsive) {
+    @include mobile {
+      @include single-font-size($mobile-size, $line-height)
+    }
+
+    @include desktop {
+      @include single-font-size($desktop-size, $line-height)
+    }
+  } @else {
+    @include single-font-size($desktop-size, $line-height)
+  }
+}
+
+@mixin single-font-size($size, $line-height) {
+  font-size: $size;
+  @if ($line-height) {
+    line-height: 6px + $size;
+  }
+}

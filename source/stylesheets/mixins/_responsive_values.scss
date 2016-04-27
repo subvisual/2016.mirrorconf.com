@@ -1,0 +1,21 @@
+@mixin responsive($values) {
+  @include mobile {
+    @each $attr, $value in $values {
+      @if type-of($value) == list {
+        #{$attr}: nth($value, 1);
+      } @else {
+        #{$attr}: $value;
+      }
+    }
+  }
+
+  @include desktop {
+    @each $attr, $value in $values {
+      @if type-of($value) == list {
+        #{$attr}: nth($value, 2);
+      } @else {
+        #{$attr}: $value;
+      }
+    }
+  }
+}

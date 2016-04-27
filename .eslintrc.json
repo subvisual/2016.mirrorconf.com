@@ -1,0 +1,32 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "globals": {
+    "_": false,
+    "$": false,
+    "Routes": false,
+    "App": false,
+    "routie": false,
+    "Mixpanel": false,
+    "AnalyticsEvents": false
+  },
+  "rules": {
+    "consistent-return": 0,
+    "space-before-function-paren": [2, "never"],
+    "id-length": [2, {"exceptions": ["_"]}],
+    "new-cap": [2, {
+      "capIsNewExceptions": ["CSSModules"]
+    }],
+    "react/no-multi-comp": [2, { "ignoreStateless": true }],
+    "react/wrap-multilines": 0,
+    "max-len": 0,
+
+    // we should strive to remove these rules ASAP.
+    // They were added only because fixing these lints is a time consuming task
+    "react/prop-types": 0,
+    "react/jsx-no-bind": 0
+  }
+}

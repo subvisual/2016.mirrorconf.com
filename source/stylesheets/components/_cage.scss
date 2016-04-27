@@ -1,0 +1,30 @@
+// Constraints the element to a given size
+$Cage-sizes: (
+  small: 300px,
+  base: 400px,
+  large: 500px,
+);
+
+.Cage {
+  max-width: 100%;
+}
+
+@each $name, $value in $Cage-sizes {
+  .Cage.#{$name} {
+    width: $value;
+  }
+
+  .Cage.#{$name}AtMost {
+    max-width: $value;
+  }
+}
+
+.Cage.smallThenLarge {
+  @include mobile {
+    width: map-get($Cage-sizes, 'small');
+  }
+
+  @include desktop {
+    width: map-get($Cage-sizes, 'large');
+  }
+}

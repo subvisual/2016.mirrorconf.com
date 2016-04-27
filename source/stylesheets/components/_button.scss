@@ -1,0 +1,49 @@
+$Button-radius: 100px;
+$Button-color: $color-white;
+$Button-padding: 0 25px;
+
+$Button--red-bg-color: $color-dark-salmon;
+$Button--blue-bg-color: $color-blue;
+
+$Button-responsive: (
+  width: (200px, 250px),
+  height: (30px, 40px),
+  line-height: (30px, 40px)
+);
+
+.Button {
+  @include font(base);
+  @include responsive($Button-responsive);
+
+  max-width: 100%;
+
+  border: none;
+  border-radius: $Button-radius;
+
+  color: $Button-color;
+
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: background-color 0.2s ease-out;
+
+  cursor: pointer;
+}
+
+.Button.red {
+  background-color: $Button--red-bg-color;
+
+  &:hover {
+    background-color: darken($Button--red-bg-color, 10%);
+  }
+}
+
+.Button.blue {
+  background-color: $Button--blue-bg-color;
+
+  &:hover {
+    background-color: darken($Button--blue-bg-color, 10%);
+  }
+}

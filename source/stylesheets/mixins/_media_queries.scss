@@ -1,0 +1,30 @@
+// scss-lint:disable TrailingSemicolon
+$breakpoints: (
+  phone: 600px,
+  tablet: 768px,
+  desktop: 1150px
+);
+// scss-lint:enable TrailingSemicolon
+@mixin mobile {
+  @include media('<desktop') {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include media('>=desktop') {
+    @content;
+  }
+}
+
+@mixin phone {
+  @include media('<=phone') {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include media('<tablet') {
+    @content;
+  }
+}
