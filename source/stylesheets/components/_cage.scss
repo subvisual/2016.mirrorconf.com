@@ -3,6 +3,7 @@ $Cage-sizes: (
   small: 300px,
   base: 400px,
   large: 500px,
+  hero-slogan: 280px,
 );
 
 .Cage {
@@ -16,6 +17,12 @@ $Cage-sizes: (
 
   .Cage.#{$name}AtMost {
     max-width: $value;
+  }
+
+  .Cage.#{$name}-mobile {
+    @include mobile {
+      max-width: $value;
+    }
   }
 }
 
