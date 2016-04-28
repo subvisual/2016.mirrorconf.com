@@ -57,7 +57,7 @@ configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash, ignore: [/logo-square.png$/]
+  activate :asset_hash, ignore: [/social-media/]
   # activate :imageoptim do |options|
   #   options.pngout = false
   # end
