@@ -1,7 +1,8 @@
 $HeroHeading-border: solid $color-white;
 
 $HeroHeading-values: (
-  border-width: (10px, 12px),
+  width: ($hero-heading-width-mobile, $hero-heading-width-desktop),
+  border-width: (8px, 12px),
   font-size: (50px, 180px),
   height: (110px, 260px),
   line-height: (110px, 260px),
