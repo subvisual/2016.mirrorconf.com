@@ -1,0 +1,8 @@
+.HeroAnimation {
+  max-height: 100%;
+  max-width: 800px;
+}
+
+.HeroAnimation.flipped {
+  transform: scaleX(-1) scaleY(-1);
+}

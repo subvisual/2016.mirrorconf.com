@@ -1,5 +1,10 @@
 .Corner {
   position: absolute;
+  max-height: 100%;
+}
+
+.Corner.noOverflow {
+  overflow: hidden;
 }
 
 .Corner.bottom {
@@ -17,7 +22,3 @@
 .Corner.right {
   right: 0;
 }
-// .Corner.from-top-to-bottom {
-//   writing-mode: vertical-lr;
-//   -ms-writing-mode: tb;
-// }

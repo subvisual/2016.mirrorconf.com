@@ -9,3 +9,7 @@
 .u-halfBottom {
   transform: translateY(50%);
 }
+
+.u-inverted {
+  transform: scaleX(-1) scaleY(-1);
+}

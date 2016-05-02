@@ -1,4 +1,17 @@
+- content_for :prefetch
+  link rel="prefetch" href="/anim/hero-intro.json"
+  link rel="prefetch" href="/anim/hero-loop.json"
+
 .Panel.hero.amaranth.u-relative
+  .Corner.noOverflow.top.left
+    #HeroAnimation-topIntro.HeroAnimation
+  .Corner.noOverflow.top.left
+    #HeroAnimation-topLoop.HeroAnimation
+  .Corner.noOverflow.bottom.right.u-inverted
+    #HeroAnimation-bottomIntro.HeroAnimation
+  .Corner.noOverflow.bottom.right.u-inverted
+    #HeroAnimation-bottomLoop.HeroAnimation
+
   .Logo
     .Img.logo
 
@@ -31,3 +44,10 @@
         p.Text.large.strong.center The conference for all web enthusiasts.
       .u-largePushBottom
       = link_to "Buy your ticket", data.links.tito, target: "_blank", class: "Button hero"
+
+
+- content_for :javascripts
+  javascript:
+    var animator = new HeroAnim();
+
+    $(animator.start.bind(animator))
