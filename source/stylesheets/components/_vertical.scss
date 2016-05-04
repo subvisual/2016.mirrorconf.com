@@ -1,6 +1,6 @@
 .Vertical.top-to-bottom {
-  transform-origin: bottom center;
   transform: rotate(90deg) translateX(-50%) translateY(50%);
+  transform-origin: bottom center;
 }
 
 .Vertical.bottom-to-top {

@@ -1,4 +1,5 @@
 $HeroHeading-border: solid $color-white;
+$HeroHeading-bg-color: $color-amaranth;
 
 $HeroHeading-values: (
   width: ($hero-heading-width-mobile, $hero-heading-width-desktop),
@@ -16,8 +17,11 @@ $HeroHeading-values: (
   align-items: center;
   justify-content: center;
 
-  font-weight: bold;
+  box-sizing: border-box;
+
+  background-color: $HeroHeading-bg-color;
+
   border: $HeroHeading-border;
 
-  box-sizing: border-box;
+  font-weight: bold;
 }

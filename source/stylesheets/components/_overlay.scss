@@ -1,14 +1,11 @@
 $Overlay-bg-color: $color-white;
 
 .Overlay {
-  opacity: 0;
-  pointer-events: none;
-
-  z-index: 100;
-
   position: fixed;
   top: 0;
   left: 0;
+
+  z-index: 100;
 
   width: 100%;
   height: 100%;
@@ -16,6 +13,9 @@ $Overlay-bg-color: $color-white;
   padding-top: $space-base;
 
   background-color: $Overlay-bg-color;
+
+  opacity: 0;
+  pointer-events: none;
 
   transition: opacity 0.4s ease-in-out;
 }

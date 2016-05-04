@@ -23,11 +23,11 @@ $Line--vertical-values: (
 }
 
 .Line.from-top-to-bottom {
-  writing-mode: vertical-lr;
   -ms-writing-mode: tb;
+  writing-mode: vertical-lr;
 }
 
 .Line.from-bottom-to-top {
-  writing-mode: sideways-lr;
   -ms-writing-mode: tb-rl;
+  writing-mode: sideways-lr;
 }

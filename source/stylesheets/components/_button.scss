@@ -20,16 +20,16 @@ $Button--hero-values: (
 
   max-width: 100%;
 
-  border: none;
+  border: 0;
 
   color: $Button-color;
+
+  cursor: pointer;
 
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-
-  cursor: pointer;
 }
 
 .Button.hero {
