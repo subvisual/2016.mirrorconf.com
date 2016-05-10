@@ -1,8 +1,5 @@
 - text: Speakers
   url: '/#speakers'
 
-- text: Buy Ticket
-  url: '/#tickets'
-
-- text: Sponsor Us
-  link_key: 'sponsor'
+- text: Code of Conduct
+  url: '/code-of-conduct'

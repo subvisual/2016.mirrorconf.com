@@ -1,0 +1,21 @@
+- name: Kyle Fiedler
+  title: Chief Design Officer at thoughtbot
+  picture: kyle-fiedler.jpg
+  bio: "Kyle leads a design team of about 30 designers at thoughtbot. He enjoys working through complex problems and coming up with simple solutions using tools such as research, design thinking, design sprints, and jobs-to-be-done to help him best understand what a product is trying to solve. He loves shipping early and iterating."
+  abstract: "Should designers code? Should they generalize or specialize? As a community we constantly reiterate these same arguments. What makes a great team is when each member’s lines of responsibility blurs into that of others. At thoughtbot, designers have a wide range of responsibilities from business strategy to graphic design, to implementing a great user expense in the app. Kyle discusses why this has been successful for their teams and how designer and developer lines blur together at thoughtbot."
+
+- name: Bürocratik
+  title: Design Studio
+  picture: burocratik.png
+
+- name: Tiago Pedras
+  title: Digital Director at Surreal
+  picture: tiago-pedras.jpg
+
+- name: Léonie Watson
+  title: Accessibility Engineer
+  picture: leonie.jpg
+
+# - name: James Chudley
+#   title: Author of 'Smashing UX Design'
+#   picture: james-chudley.jpg

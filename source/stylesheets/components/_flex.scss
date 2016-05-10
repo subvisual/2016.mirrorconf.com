@@ -46,6 +46,10 @@
   justify-content: space-around;
 }
 
+.Flex.compensateMargin {
+  margin: 0 -#{ $grid-margin / 2 };
+}
+
 .Flex-grow {
   flex-grow: 1;
   max-width: 100%;

@@ -207,6 +207,3 @@ DEPENDENCIES
   rubocop
   scss_lint
   slim
-
-BUNDLED WITH
-   1.11.2

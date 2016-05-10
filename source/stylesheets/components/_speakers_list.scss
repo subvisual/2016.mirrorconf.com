@@ -1,0 +1,60 @@
+.SpeakersList {
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  margin: auto;
+}
+
+.SpeakersList-title {
+  margin: 0 10px;
+}
+
+.SpeakersList-speaker {
+  display: inline-block;
+}
+
+$SpeakersList-min-padding: 160px;
+
+$Speaker-mobile-breakpoints: (
+  (
+    screen-width: $speaker-tile-size-mobile + $SpeakersList-min-padding * 0.5,
+    max-width:  $speaker-tile-size-mobile
+  ),
+  (
+    screen-width: 2 * $speaker-tile-size-mobile + $SpeakersList-min-padding * 0.5,
+    max-width: 2 * $speaker-tile-size-mobile
+  ),
+  (
+    screen-width: 3 * $speaker-tile-size-mobile + $SpeakersList-min-padding * 0.5,
+    max-width: 3 * $speaker-tile-size-mobile
+  ),
+);
+
+$Speaker-desktop-breakpoints: (
+  (
+    screen-width: 2 * $speaker-tile-size-desktop + $SpeakersList-min-padding,
+    max-width: 2 * $speaker-tile-size-desktop
+  ),
+  (
+    screen-width: 3 * $speaker-tile-size-desktop + $SpeakersList-min-padding,
+    max-width: 3 * $speaker-tile-size-desktop
+  ),
+  (
+    screen-width: 4 * $speaker-tile-size-desktop + $SpeakersList-min-padding,
+    max-width: 4 * $speaker-tile-size-desktop
+  ),
+);
+
+.SpeakersList {
+  @each $data in $Speaker-mobile-breakpoints {
+    @include media("<desktop", ">=#{map-get($data, screen-width)}") {
+      width: map-get($data, max-width);
+    }
+  }
+
+  @each $data in $Speaker-desktop-breakpoints {
+    @include media(">=desktop", ">=#{map-get($data, screen-width)}") {
+      width: map-get($data, max-width);
+    }
+  }
+}

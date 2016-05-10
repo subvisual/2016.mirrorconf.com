@@ -1,0 +1,65 @@
+$Speaker-values: (
+  width: ($speaker-tile-size-mobile, $speaker-tile-size-desktop),
+  height: (320px, 395px)
+);
+
+$Speaker-name-values: (
+  font-size: (26px, 38px),
+  line-height: (36px, 48px)
+);
+
+$Speaker-title-values: (
+  font-size: (14px, 18px),
+  line-height: (24px, 28px)
+);
+
+.Speaker {
+  @include responsive($Speaker-values);
+
+  display: flex;
+}
+
+.Speaker-inner {
+  background-size: cover;
+  margin: #{ $grid-margin } #{ $grid-margin / 2 };
+  width: 100%;
+  position: relative;
+
+  &::before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-light-purple, 0.4),
+      rgba($color-amaranth, 0.9)
+   );
+  }
+}
+
+.Speaker-info {
+  bottom: 25px;
+  padding: 0 5px 0 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.Speaker-name {
+  @include responsive($Speaker-name-values);
+
+  font-family: 'Montserrat Alternates';
+  font-weight: bold;
+}
+
+.Speaker-title {
+  @include responsive($Speaker-title-values);
+
+  color: $color-maize;
+  font-family: 'Merriweather';
+  font-weight: 300;
+}
