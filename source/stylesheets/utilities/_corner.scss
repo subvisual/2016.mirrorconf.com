@@ -1,13 +1,15 @@
 .Corner {
   position: absolute;
 
-  width: 100%;
-
   max-height: 100%;
 }
 
 .Corner.noOverflow {
   overflow: hidden;
+}
+
+.Corner.fullWidth {
+  width: 100%;
 }
 
 .Corner.bottom {
