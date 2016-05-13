@@ -1,0 +1,20 @@
+$SectionHeading-values: (
+  font-size: (60px, 160px),
+  line-height: (70px, 195px),
+  margin-bottom: (-55px, -95px),
+);
+
+.SectionHeading {
+  @include responsive($SectionHeading-values);
+
+  font-family: 'Montserrat Alternates';
+  font-weight: 700;
+  letter-spacing: .0027em;
+  margin-bottom: -50px;
+  position: relative;
+  z-index: 1;
+}
+
+.SectionHeading.orange {
+  color: $color-maize;
+}
