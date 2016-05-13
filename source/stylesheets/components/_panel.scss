@@ -18,7 +18,7 @@ $Panel-colors: (
   min-height: 100%;
 }
 
-.Panel-content {
+.Panel.hero .Panel-content {
   @include responsive($Panel-content-responsive);
 
   flex-grow: 1;

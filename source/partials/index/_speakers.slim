@@ -1,0 +1,11 @@
+#speakers.Panel.speakers.gradient
+  .Flex.justifyCenter
+    .u-largePushRight
+    .Section
+      .SpeakersList
+        .SpeakersList-title
+          h1.SectionHeading.orange speakers
+        - data.speakers.each do |speaker|
+          .SpeakersList-speaker
+            = partial "index/speaker", locals: { speaker: speaker }
+    .u-largePushRight

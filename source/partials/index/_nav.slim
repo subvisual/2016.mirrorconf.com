@@ -1,0 +1,13 @@
+.Panel.amaranth
+  .u-desktop.Flex.row.spaceBetween.alignCenter
+    = .ink_to "/"
+      .Img.logo
+    .Flex.row
+      .u-basePushRight
+      - data.menu.each do |item|
+        a.Text.serif href="#" = item.text
+        .u-basePushRight
+    span
+
+  .u-mobile
+
