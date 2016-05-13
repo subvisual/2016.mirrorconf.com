@@ -1,13 +1,13 @@
-.Panel.amaranth
+.Nav
   .u-desktop.Flex.row.spaceBetween.alignCenter
     = link_to "/"
       .Img.logo
-    .Flex.row
+    .Flex.row.spaceBetween
       .u-basePushRight
-      - data.menu.each do |item|
-        a.Text.serif href="#" = item.text
+      - data.nav.each do |item|
+        a.Nav-link href=item.url = item.text
         .u-basePushRight
+      .u-basePushRight
     span
 
   .u-mobile
-

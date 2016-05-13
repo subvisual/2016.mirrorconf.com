@@ -1,0 +1,12 @@
+- text: About
+  url: '/about/'
+
+- text: Practical Details
+  url: '/practical-details/'
+
+- text: Code of Conduct
+  url: '/code-of-conduct/'
+
+- text: Sponsor us
+  url: '/sponsorship.pdf'
+

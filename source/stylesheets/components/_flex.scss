@@ -46,8 +46,8 @@
   justify-content: space-around;
 }
 
-.Flex.compensateMargin {
-  margin: 0 -#{ $grid-margin / 2 };
+.Flex.spaceBetween {
+  justify-content: space-between;
 }
 
 .Flex-grow {

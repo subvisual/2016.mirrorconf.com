@@ -7,6 +7,7 @@ $breakpoints: (
 );
 
 $font-family: 'Montserrat', sans-serif;
+$font-family-serif: 'Merriweather', serif;
 
 // Spacing
 $space-small: 20px;
@@ -28,3 +29,6 @@ $grid-margin: 20px;
 
 $speaker-tile-size-desktop: 375px;
 $speaker-tile-size-mobile: 300px;
+
+$layer-base: 0;
+$layer-nav: 10;

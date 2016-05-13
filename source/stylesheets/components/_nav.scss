@@ -1,0 +1,26 @@
+$Nav-bg-color: $color-amaranth;
+$Nav-layer: $layer-nav;
+$Nav-padding: 40px;
+$Nav-link-color: $color-white;
+
+.Nav {
+  font-family: $font-family-serif;
+
+  position: fixed;
+
+  width: 100%;
+
+  z-index: $Nav-layer;
+
+  padding: $Nav-padding;
+}
+
+.Nav-link {
+  text-decoration: none;
+
+  color: $Nav-link-color;
+
+  &.active {
+    border-bottom: solid 1px $Nav-link-color;
+  }
+}
