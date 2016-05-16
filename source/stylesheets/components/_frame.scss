@@ -1,0 +1,13 @@
+$Frame-colors: (
+  blue: $color-blue,
+);
+
+.Frame {
+  border: solid 12px;
+}
+
+@each $name, $color in $Frame-colors {
+  .Frame.#{$name} {
+    border-color: $color;
+  }
+}

@@ -1,6 +1,5 @@
 $Speaker-values: (
-  width: ($speaker-tile-size-mobile, $speaker-tile-size-desktop),
-  height: (320px, 395px)
+  height: (280px, 355px)
 );
 
 $Speaker-name-values: (
@@ -16,12 +15,13 @@ $Speaker-title-values: (
 .Speaker {
   @include responsive($Speaker-values);
 
+  width: 100%;
+
   display: flex;
 }
 
 .Speaker-inner {
   background-size: cover;
-  margin: #{ $grid-margin } #{ $grid-margin / 2 };
   width: 100%;
   position: relative;
 

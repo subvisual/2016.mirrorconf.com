@@ -2,16 +2,25 @@ $HeroHeading-border: solid $color-white;
 $HeroHeading-bg-color: $color-amaranth;
 
 $HeroHeading-values: (
-  width: ($hero-heading-width-mobile, $hero-heading-width-desktop),
+  min-width: ($hero-heading-width-mobile, $hero-heading-width-desktop),
   border-width: (8px, 12px),
-  font-size: (50px, 180px),
   height: (110px, 260px),
   line-height: (110px, 260px),
   padding: (0 20px, 0 90px)
 );
 
+$HeroHeading--twoLines-values: (
+  height: (175px, 450px),
+);
+
+$HeroHeading-bg-colors: (
+  amaranth: $color-amaranth,
+  blue: $color-blue,
+);
+
 .HeroHeading {
   @include responsive($HeroHeading-values);
+  @include font(hugeHeading);
 
   display: flex;
   align-items: center;
@@ -19,9 +28,20 @@ $HeroHeading-values: (
 
   box-sizing: border-box;
 
-  background-color: $HeroHeading-bg-color;
-
   border: $HeroHeading-border;
 
   font-weight: bold;
+
+  text-align: center;
+}
+
+.HeroHeading.twoLines {
+  @include responsive($HeroHeading--twoLines-values);
+  @include font(hugeHeading);
+}
+
+@each $name, $color in $HeroHeading-bg-colors {
+  .HeroHeading.#{$name} {
+    background-color: $color;
+  }
 }

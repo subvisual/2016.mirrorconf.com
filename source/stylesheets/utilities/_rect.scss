@@ -17,10 +17,17 @@ $Rect--hero-values: (
   border-left: $Rect-border;
 }
 
-.Rect.top {
+.Rect.top:not(.hero) {
   border-top: $Rect-border;
 }
 
 .Rect.right {
   border-right: $Rect-border;
+}
+
+.Rect.right.hero {
+  @include mobile {
+    height: 40px;
+    margin-top: 40px;
+  }
 }

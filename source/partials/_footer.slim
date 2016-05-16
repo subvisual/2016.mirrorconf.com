@@ -1,0 +1,21 @@
+.Panel.amaranth
+  .u-largePaddingBottom
+
+  .GridTwo
+    .GridTwo-col
+      .Flex.justifyCenter
+        .Img.logo
+      .u-largePushBottom
+    .GridTwo-largeCol.u-desktop
+      .Flex.row-desktop.column-mobile.spaceBetween.alignCenter-mobile
+        .Flex.column.u-serif
+          - data.nav.each do |item|
+            = nav_link item.text, item.url, classes: "Nav-smallLink"
+            .u-smallPushBottom
+        .Flex.row
+          = link_to "", data.links.facebook, target: "_blank", class: "Img icons-facebook"
+          .u-basePushRight
+          = link_to "", data.links.twitter, target: "_blank", class: "Img icons-twitter"
+
+
+  .u-largePaddingBottom

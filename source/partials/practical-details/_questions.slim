@@ -1,0 +1,52 @@
+.Panel.sand
+  .Panel-content
+    .Flex.column.alignCenter
+      .u-hugePushBottom
+
+      .Cage.faq
+        .Flex.row-desktop.column-mobile.spaceBetween.alignCenter-mobile
+          .Flex-grow.Cage.largeAtMost.u-largePushBottom
+            h1.Text.blue.large.uppercase.strong Getting to Braga
+            .u-basePushBottom
+            h1.Text.base.pink.strong.u-serif Porto Airport
+            .u-smallPushBottom
+            p.Text.dark.small.u-serif The closest airport is in Porto (OPO), from where you can either:
+            br
+            .Flex.row
+              .u-basePushRight
+              p.Text.dark.small.u-serif
+                | a) catch a direct bus with  service called #{link_to "GetBus", data.links.getbus, target: "_blank", class: "Text-link"}
+                br
+                br
+                | b) catch a #{link_to "train at Porto Campanhã", data.links.train_porto, target: "_blank", class: "Text-link"} (~1 hour trip)
+            .u-basePushBottom
+            h1.Text.base.pink.strong.u-serif Lisbon Airport
+            .u-smallPushBottom
+            p.Text.dark.small.u-serif If you want to land in Lisbon, you can catch a #{link_to "train at Lisboa Oriente", data.links.train_lisbon, target: "_blank", class: "Text-link"} to Braga (~4 hour trip).
+          .u-basePushRight
+
+          .Flex-grow.Cage.largeAtMost.u-largePushBottom
+            h1.Text.large.blue.uppercase.strong Where to stay
+            .u-basePushBottom
+            p.Text.dark.small.u-serif We are negotiating a partnership with a handpick of great hotels in Braga and we will soon have all of our recommended options in this website.
+            br
+            p.Text.dark.small.u-serif Follow us on #{link_to "facebook", data.links.facebook, target: "_blank", class: "Text-link"} or #{link_to "twitter", data.links.twitter, target: "_blank", class: "Text-link"} to be updated as soon as possible.
+
+        .Flex.row-desktop.column-mobile.spaceBetween.alignCenter-mobile
+          .Flex-grow.Cage.largeAtMost.u-largePushBottom
+            h1.Text.large.blue.uppercase.strong What to do in Braga
+            .u-basePushBottom
+            p.Text.dark.small.u-serif Braga is the third largest city of Portugal and it was the European Youth Capital in 2012. Braga’s tech scene has exploded in the last 5 years, driven by a fantastic academic institution like Universidade do Minho and exciting initiatives like Startup Braga.
+            br
+            p.Text.dark.small.u-serif Only 30 minutes away from breathtaking Porto, we suggest you take the opportunity to stay a few more days and fall in love with Portugal. Don’t take our word for it, check out #{link_to "these 43 reasons why you’ll love it here", "http://www.geekyexplorer.com/visiting-portugal-is-a-good-idea", class: "Text-link", target: "_blank"}.
+          .u-basePushRight
+
+
+          .Flex-grow
+            .Cage.largeAtMost.u-largePushBottom
+              h1.Text.large.uppercase.strong.blue Still have questions?
+              .u-basePushBottom
+              = link_to "Contact us", data.links.contact_mail, target: "_blank", class: "Button blue"
+
+        .u-largePushRight
+  .u-hugePaddingBottom

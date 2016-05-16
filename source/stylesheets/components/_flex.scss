@@ -10,18 +10,6 @@
   flex-direction: column;
 }
 
-.Flex.row-desktop {
-  @include desktop {
-    flex-direction: row;
-  }
-}
-
-.Flex.column-mobile {
-  @include mobile {
-    flex-direction: column;
-  }
-}
-
 .Flex.wrap {
   flex-wrap: wrap;
 }
@@ -42,6 +30,10 @@
   justify-content: flex-end;
 }
 
+.Flex.spaceBetween {
+  justify-content: space-between;
+}
+
 .Flex.spaceAround {
   justify-content: space-around;
 }
@@ -52,5 +44,34 @@
 
 .Flex-grow {
   flex-grow: 1;
-  max-width: 100%;
+  width: 100%;
+}
+
+.Flex-fullHeightChild {
+  display: flex;
+  align-items: stretch;
+}
+
+@include desktop {
+  .Flex.justifyCenter-desktop {
+    justify-content: center;
+  }
+
+  .Flex.row-desktop {
+    flex-direction: row;
+  }
+
+  .Flex.justifyCenter-desktop {
+    justify-content: center;
+  }
+}
+
+@include mobile {
+  .Flex.column-mobile {
+    flex-direction: column;
+  }
+
+  .Flex.alignCenter-mobile {
+    align-items: center;
+  }
 }

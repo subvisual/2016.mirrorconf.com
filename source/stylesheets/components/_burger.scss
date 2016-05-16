@@ -1,0 +1,63 @@
+$Burger-color: $color-white;
+$Burger-open-color: $color-white;
+$Burger-width: 40px;
+$Burger-height: 20px;
+$Burger-line-height: 2px;
+$Burger-line-offset: 8px;
+
+.Burger {
+  position: relative;
+
+  z-index: 1000;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  width: $Burger-width;
+  height: $Burger-height;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.Burger-line {
+  position: absolute;
+
+  width: 100%;
+  height: $Burger-line-height;
+
+  background: $Burger-color;
+}
+
+.Burger-line {
+  transition-duration: 0.3s;
+  transition-property: opacity transform;
+  transition-timing-function: ease-in-out;
+
+  &:nth-child(1) {
+    transform: translateY(-$Burger-line-offset);
+  }
+
+  &:nth-child(3) {
+    transform: translateY($Burger-line-offset);
+  }
+}
+
+.Burger.is-open .Burger-line {
+  background-color: $Burger-open-color;
+
+  &:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+}

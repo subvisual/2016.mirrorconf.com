@@ -1,9 +1,15 @@
+$Text-colors: (
+  white: $color-white,
+  pink: $color-red-pink,
+  blue: $color-blue,
+  dark: $color-greyish-brown,
+  yellow: $color-maize,
+);
+
+$Text-sizes: (small, base, large, heading);
+
 .Text {
   color: $color-white;
-}
-
-.Text.large {
-  @include font('large');
 }
 
 .Text.strong {
@@ -12,4 +18,23 @@
 
 .Text.center {
   text-align: center;
+}
+
+.Text-link {
+  color: $color-red-pink;
+
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@each $name, $color in $Text-colors {
+  .Text.#{$name} {
+    color: $color;
+  }
+}
+
+@each $size in $Text-sizes {
+  .Text.#{$size} {
+    @include font($size);
+  }
 }

@@ -2,7 +2,7 @@
   link rel="prefetch" href="/anim/hero-intro.json"
   link rel="prefetch" href="/anim/hero-loop.json"
 
-.Panel.hero.padded.amaranth.u-relative
+.Panel.hero.padded.blue.u-relative
   .Corner.noOverflow.fullWidth.top.left.u-noEvents
     #HeroAnimation-topIntro.HeroAnimation
   .Corner.noOverflow.fullWidth.top.left.u-noEvents
@@ -35,14 +35,7 @@
             = link_to "", data.links.twitter, target: "_blank", class: "Img icons-twitter"
 
     .Flex.column.alignCenter
-      .u-largePushBottom
-      h1.HeroHeading.amaranth mirror
-      .u-basePushBottom
-      .Cage.hero-slogan-mobile
-        p.Text.large.strong.center The conference for all web enthusiasts.
-      .u-largePushBottom
-      = link_to "Buy your ticket", data.links.tito, target: "_blank", class: "Button white"
-      .u-largePushBottom
+      h1.HeroHeading.blue about
 
 - content_for :javascripts
   javascript:

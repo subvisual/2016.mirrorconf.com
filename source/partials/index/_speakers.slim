@@ -1,11 +1,15 @@
-#speakers.Panel.speakers.gradient
+#speakers.Panel.sand
+  .u-hugePaddingBottom
+  .Grid.four
+    .Grid-title
+      h1.SectionHeading.overlayed.orange speakers
+    - data.speakers.each do |speaker|
+      .Grid-col
+        = partial "index/speaker", locals: { speaker: speaker }
+        .u-basePushBottom
+
+  .u-largePushBottom
+
   .Flex.justifyCenter
-    .u-largePushRight
-    .Section
-      .SpeakersList
-        .SpeakersList-title
-          h1.SectionHeading.orange speakers
-        - data.speakers.each do |speaker|
-          .SpeakersList-speaker
-            = partial "index/speaker", locals: { speaker: speaker }
-    .u-largePushRight
+    = link_to "Buy your ticket", data.links.tito, target: "_blank", class: "Button white"
+  .u-hugePaddingBottom

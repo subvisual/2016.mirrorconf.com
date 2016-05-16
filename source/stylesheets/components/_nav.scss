@@ -3,24 +3,45 @@ $Nav-layer: $layer-nav;
 $Nav-padding: 40px;
 $Nav-link-color: $color-white;
 
+$Nav-values: (
+  padding: (20px, 40px),
+);
+
 .Nav {
-  font-family: $font-family-serif;
+  @include responsive($Nav-values);
 
-  position: fixed;
-
-  width: 100%;
+  position: absolute;
+  top: 0;
 
   z-index: $Nav-layer;
 
-  padding: $Nav-padding;
+  width: 100%;
+
+  font-family: $font-family-serif;
+
+  @include desktop {
+    @include font(small);
+  }
+
+  @include mobile {
+    @include font(base);
+  }
 }
 
 .Nav-link {
-  text-decoration: none;
-
   color: $Nav-link-color;
+
+  text-decoration: none;
 
   &.active {
     border-bottom: solid 1px $Nav-link-color;
   }
+}
+
+.Nav-current {
+  border-bottom: solid 1px $color-white;
+}
+
+.Nav-smallLink {
+  @include font(small);
 }

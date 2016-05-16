@@ -1,0 +1,5 @@
+.u-two-columns-desktop {
+  @include desktop {
+    column-count: 2;
+  }
+}

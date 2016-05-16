@@ -1,0 +1,49 @@
+$Right-col-width: 220px;
+
+$Right-min-padding: 160px;
+$Right-min-padding-mobile: 80px;
+
+.Right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+$Right-breakpoints: (
+  (
+    screen-width: $Right-col-width + $Right-min-padding,
+    max-width: $Right-col-width,
+    columns: 1,
+  ),
+  (
+    screen-width: 2 * $Right-col-width + $Right-min-padding,
+    max-width: 2 * $Right-col-width,
+    columns: 2,
+  ),
+  (
+    screen-width: 3 * $Right-col-width + $Right-min-padding,
+    max-width: 3 * $Right-col-width,
+    columns: 3,
+  ),
+  (
+    screen-width: 4 * $Right-col-width + $Right-min-padding,
+    max-width: 4 * $Right-col-width,
+    columns: 3,
+  ),
+  (
+    screen-width: 5 * $Right-col-width + $Right-min-padding,
+    max-width: 5 * $Right-col-width,
+    columns: 3,
+  ),
+);
+
+.Right {
+  @each $data in $Right-breakpoints {
+    @include media(">=#{map-get($data, screen-width)}") {
+      // width: map-get($data, max-width);
+
+      .Right-content {
+        width: map-get($data, columns) * $Right-col-width;
+      }
+    }
+  }
+}

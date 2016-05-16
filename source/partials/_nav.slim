@@ -5,9 +5,23 @@
     .Flex.row.spaceBetween
       .u-basePushRight
       - data.nav.each do |item|
-        a.Nav-link href=item.url = item.text
+        = nav_link item.text, item.url, current: current
         .u-basePushRight
       .u-basePushRight
     span
 
-  .u-mobile
+  .u-mobile.Flex.row.justifyEnd
+    #Burger.Burger
+      .Burger-line
+      .Burger-line
+      .Burger-line
+
+  .u-mobile#Overlay.Overlay
+    .Flex.column.alignCenter
+      - data.nav.each do |item|
+        = nav_link item.text, item.url, current: current
+        .u-largePushBottom
+
+- content_for :javascripts
+  javascript:
+    $(Nav.listenToBurger);

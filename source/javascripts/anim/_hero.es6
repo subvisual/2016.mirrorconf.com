@@ -11,24 +11,24 @@ class HeroAnim {
     this.data = {
       topIntro: _.assign({}, this.commonData, {
         container: document.getElementById("HeroAnimation-topIntro"),
-        path: "anim/hero-intro.json",
+        path: "/anim/hero-intro.json",
       }),
 
       bottomIntro: _.assign({}, this.commonData, {
         container: document.getElementById("HeroAnimation-bottomIntro"),
-        path: "anim/hero-intro.json",
+        path: "/anim/hero-intro.json",
       }),
 
       topLoop: _.assign({}, this.commonData, {
         container: document.getElementById("HeroAnimation-topLoop"),
-        path: "anim/hero-loop.json",
+        path: "/anim/hero-loop.json",
         loop: true,
         autoplay: false
       }),
 
       bottomLoop: _.assign({}, this.commonData, {
         container: document.getElementById("HeroAnimation-bottomLoop"),
-        path: "anim/hero-loop.json",
+        path: "/anim/hero-loop.json",
         loop: true,
         autoplay: false
       })

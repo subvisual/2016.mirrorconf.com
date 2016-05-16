@@ -1,20 +1,45 @@
+$SectionHeading-colors: (
+  orange: $color-maize,
+  pink: $color-red-pink,
+  yellow: $color-maize,
+);
+
 $SectionHeading-values: (
-  font-size: (60px, 160px),
   line-height: (70px, 195px),
-  margin-bottom: (-55px, -95px),
+);
+
+$SectionHeading--small-values: (
+  line-height: (40px, 110px),
+);
+
+$SectionHeading--overlayed-values: (
+  margin-bottom: (-25px, -75px),
 );
 
 .SectionHeading {
   @include responsive($SectionHeading-values);
+  @include font(hugeHeading);
+
+  position: relative;
+
+  z-index: 1;
 
   font-family: 'Montserrat Alternates';
   font-weight: 700;
   letter-spacing: .0027em;
-  margin-bottom: -50px;
-  position: relative;
-  z-index: 1;
 }
 
-.SectionHeading.orange {
-  color: $color-maize;
+.SectionHeading.small {
+  @include responsive($SectionHeading--small-values);
+  @include font(heading);
+}
+
+.SectionHeading.overlayed {
+  @include responsive($SectionHeading--overlayed-values);
+}
+
+@each $name, $color in $SectionHeading-colors {
+  .SectionHeading.#{$name} {
+    color: $color;
+  }
 }

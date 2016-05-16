@@ -1,14 +1,20 @@
 // scss-lint:disable TrailingSemicolon
 $default-font-sizes: (
   desktop: (
-    small: 16px,
-    base: 20px,
-    large: 24px
+    small: 18px,
+    base: 22px,
+    large: 26px,
+    heading: 62px,
+    largeHeading: 100px,
+    hugeHeading: 160px
   ),
   mobile: (
-    small: 16px,
-    base: 16px,
-    large: 16px
+    small: 14px,
+    base: 18px,
+    large: 26px,
+    heading: 26px,
+    largeHeading: 26px,
+    hugeHeading: 60px
   )
 );
 // scss-lint:enable TrailingSemicolon
@@ -33,6 +39,6 @@ $default-font-sizes: (
 @mixin single-font-size($size, $line-height) {
   font-size: $size;
   @if ($line-height) {
-    line-height: 6px + $size;
+    line-height: 10px + $size;
   }
 }

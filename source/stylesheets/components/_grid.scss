@@ -1,0 +1,157 @@
+$Grid--four-col-desktop: 375px;
+$Grid--four-col-mobile: 300px;
+$Grid--five-col-desktop: 250px;
+$Grid--five-col-mobile: 250px;
+$Grid-gutter: 10px;
+
+$Grid--four-col-values: (
+  width: (300px - $Grid-gutter * 2, 375px - $Grid-gutter * 2),
+);
+$Grid--five-col-values: (
+  width: (250px - $Grid-gutter * 2, 250px - $Grid-gutter * 2),
+);
+
+$Grid-min-padding-desktop: 80px;
+$Grid-min-padding-mobile: 40px;
+
+.Grid {
+  display: block;
+
+  width: 100%;
+
+  margin: auto;
+}
+
+.Grid-title {
+  margin: 0 10px;
+}
+
+.Grid-col,
+.Grid-col3,
+.Grid-wideCol,
+.Grid-wideCol3 {
+  display: inline-block;
+  margin: 0 $Grid-gutter;
+}
+
+@mixin Grid--four-wideColumn($i, $col-width) {
+  .Grid-col3 {
+
+  }
+
+  .Grid-wideCol {
+    @if $i >= 2 {
+      width: ($col-width - $Grid-gutter) * 2;
+    }
+  }
+
+  .Grid-wideCol3 {
+    @if $i >= 4 {
+      width: ($col-width - $Grid-gutter) * 3;
+    } @else if $i >= 2 {
+      width: ($col-width - $Grid-gutter) * 2;
+    }
+  }
+}
+
+@mixin Grid--four-offset($i, $col-width) {
+  .Grid-offset {
+    @if $i > 2 {
+      margin-left: $col-width + $Grid-gutter;
+    }
+  }
+
+  .Grid-offset3 {
+    @if $i > 2 {
+      margin-left: $col-width + $Grid-gutter;
+    }
+  }
+}
+
+@mixin Grid--five-wideColumn($i, $col-width) {
+  .Grid-wideCol {
+    @if $i >= 3 {
+      width: ($col-width - $Grid-gutter) * 3;
+    } @else if $i >= 2 {
+      width: ($col-width - $Grid-gutter) * 2;
+    }
+  }
+}
+
+@mixin Grid--five-offset($i, $col-width) {
+  .Grid-offset {
+    @if $i > 4 {
+      margin-left: ($col-width + $Grid-gutter) * 2;
+    } @else if $i > 3 {
+      margin-left: ($col-width - $Grid-gutter) * 1;
+    }
+  }
+}
+
+.Grid.four {
+  .Grid-col,
+  .Grid-col3,
+  .Grid-wideCol,
+  .Grid-wideCol3 {
+    @include responsive($Grid--four-col-values);
+  }
+
+  @for $i from 1 through 4 {
+    @include desktop {
+      $col-width: $Grid--four-col-desktop;
+      $width: $i * $col-width;
+
+      @include media(">=#{$width + $Grid-min-padding-desktop}") {
+        @include Grid--four-wideColumn($i, $col-width);
+        @include Grid--four-offset($i, $col-width);
+
+        width: $width;
+      }
+    }
+
+    @include mobile {
+      $col-width: $Grid--four-col-mobile;
+      $width: $i * $col-width;
+
+      @include media(">=#{$width + $Grid-min-padding-mobile}") {
+        @include Grid--four-wideColumn($i, $col-width);
+        @include Grid--four-offset($i, $col-width);
+
+        width: $width;
+      }
+    }
+  }
+}
+
+.Grid.five {
+  .Grid-col,
+  .Grid-wideCol {
+    @include responsive($Grid--five-col-values);
+  }
+
+  @for $i from 1 through 5 {
+    @include desktop {
+      $col-width: $Grid--five-col-desktop;
+      $width: $i * $col-width;
+
+      @include media(">=#{$width + $Grid-min-padding-desktop}") {
+        @include Grid--five-wideColumn($i, $col-width);
+        @include Grid--five-offset($i, $col-width);
+
+        width: $width;
+      }
+    }
+
+    @include mobile {
+      $col-width: $Grid--five-col-mobile;
+      $width: $i * $col-width;
+
+      @include media(">=#{$width + $Grid-min-padding-mobile}") {
+        @include Grid--five-wideColumn($i, $col-width);
+        @include Grid--five-offset($i, $col-width);
+
+        width: $width;
+      }
+    }
+  }
+}
