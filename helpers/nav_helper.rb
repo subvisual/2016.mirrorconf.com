@@ -1,8 +1,8 @@
 module NavHelper
-  def nav_link(text, url, current: "none", classes: "")
+  def nav_link(item, current: "none", classes: "")
     classes += " Nav-link"
-    classes += " Nav-current" if url.include?(current)
+    classes += " Nav-current" if item.url.include?(current)
 
-    link_to text, url, class: classes
+    link_to item.text, item.url, target: item.target, class: classes
   end
 end

@@ -5,7 +5,7 @@
     .Flex.row.spaceBetween
       .u-basePushRight
       - data.nav.each do |item|
-        = nav_link item.text, item.url, current: current
+        = nav_link item, current: current
         .u-basePushRight
       .u-basePushRight
     span
@@ -19,7 +19,7 @@
   .u-mobile#Overlay.Overlay
     .Flex.column.alignCenter
       - data.nav.each do |item|
-        = nav_link item.text, item.url, current: current
+        = nav_link item, current: current
         .u-largePushBottom
 
 - content_for :javascripts
