@@ -30,6 +30,7 @@ $Grid-min-padding-mobile: 40px;
 .Grid-col3,
 .Grid-wideCol,
 .Grid-wideCol3 {
+  vertical-align: top;
   display: inline-block;
   margin: 0 $Grid-gutter;
 }

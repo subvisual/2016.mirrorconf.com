@@ -38,3 +38,16 @@ $Text-sizes: (small, base, large, heading);
     @include font($size);
   }
 }
+
+.Text.indicative {
+
+  @include desktop {
+    @include font(large);
+
+    padding-top: 5px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

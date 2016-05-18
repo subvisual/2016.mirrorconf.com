@@ -3,14 +3,15 @@ $HeroHeading-bg-color: $color-amaranth;
 
 $HeroHeading-values: (
   min-width: ($hero-heading-width-mobile, $hero-heading-width-desktop),
-  border-width: (8px, 12px),
-  height: (110px, 260px),
-  line-height: (110px, 260px),
+  font-size: (36px, 160px),
+  border-width: (6px, 12px),
+  height: (46px, 260px),
+  line-height: (46px, 260px),
   padding: (0 20px, 0 90px)
 );
 
 $HeroHeading--twoLines-values: (
-  height: (175px, 450px),
+  height: (116px, 450px),
 );
 
 $HeroHeading-bg-colors: (
@@ -20,7 +21,6 @@ $HeroHeading-bg-colors: (
 
 .HeroHeading {
   @include responsive($HeroHeading-values);
-  @include font(hugeHeading);
 
   display: flex;
   align-items: center;
@@ -37,7 +37,6 @@ $HeroHeading-bg-colors: (
 
 .HeroHeading.twoLines {
   @include responsive($HeroHeading--twoLines-values);
-  @include font(hugeHeading);
 }
 
 @each $name, $color in $HeroHeading-bg-colors {
