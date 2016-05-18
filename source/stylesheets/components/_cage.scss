@@ -35,3 +35,8 @@ $Cage-sizes: (
     width: map-get($Cage-sizes, 'large');
   }
 }
+
+.Cage.padded {
+  padding-left: 20px;
+  padding-right: 20px;
+}
