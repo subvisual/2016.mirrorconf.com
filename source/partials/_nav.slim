@@ -1,17 +1,16 @@
 .Nav
-  .u-desktop.Flex.row.spaceBetween.alignCenter
+  .Flex.row.spaceBetween.alignCenter
     = link_to "/"
       .Img.logo
-    .Flex.row.spaceBetween
+    .u-desktop.Flex.row.spaceBetween
       .u-basePushRight
       - data.nav.each do |item|
         = nav_link item, current: current
         .u-basePushRight
       .u-basePushRight
-    span
+    .u-desktop
 
-  .u-mobile.Flex.row.justifyEnd
-    #Burger.Burger
+    .u-mobile#Burger.Burger
       .Burger-line
       .Burger-line
       .Burger-line
