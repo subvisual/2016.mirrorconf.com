@@ -4,6 +4,8 @@ $Grid--five-col-desktop: 250px;
 $Grid--five-col-mobile: 250px;
 $Grid-gutter: 10px;
 
+$Grid--four-minus-five-mobile: $Grid--four-col-mobile - $Grid--five-col-mobile;
+
 $Grid--four-col-values: (
   width: (300px - $Grid-gutter * 2, 375px - $Grid-gutter * 2),
 );
@@ -128,6 +130,10 @@ $Grid-min-padding-mobile: 40px;
   .Grid-col,
   .Grid-wideCol {
     @include responsive($Grid--five-col-values);
+
+    @include mobile {
+      @include responsive($Grid--four-col-values);
+    }
   }
 
   @for $i from 1 through 5 {
@@ -151,7 +157,11 @@ $Grid-min-padding-mobile: 40px;
         @include Grid--five-wideColumn($i, $col-width);
         @include Grid--five-offset($i, $col-width);
 
-        width: $width;
+        @if $i == 1 {
+          width: $Grid--four-col-mobile;
+        } @else {
+          width: $width;
+        }
       }
     }
   }
