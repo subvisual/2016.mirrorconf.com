@@ -2,8 +2,14 @@ $Frame-colors: (
   blue: $color-blue,
 );
 
+$Frame-values: (
+  border-width: (6px, 12px),
+);
+
 .Frame {
-  border: solid 12px;
+  @include responsive($Frame-values);
+
+  border-style: solid;
 }
 
 @each $name, $color in $Frame-colors {
