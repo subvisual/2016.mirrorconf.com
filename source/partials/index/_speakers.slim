@@ -2,7 +2,7 @@
   .u-hugePaddingBottom
   .Grid.four
     .Grid-title
-      h1.SectionHeading.overlayed.orange speakers
+      h2.SectionHeading.overlayed.orange speakers
     - data.speakers.each do |speaker|
       .Grid-col
         = partial "index/speaker", locals: { speaker: speaker }

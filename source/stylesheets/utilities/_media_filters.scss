@@ -9,3 +9,9 @@
     display: none;
   }
 }
+
+.u-hideSpeech {
+  @media speech {
+    display: none;
+  }
+}

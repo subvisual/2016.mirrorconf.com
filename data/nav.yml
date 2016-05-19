@@ -1,8 +1,10 @@
 - text: About
   url: '/about/'
+  screen_reader_text: " Mirror Conf"
 
 - text: Practical Details
   url: '/practical-details/'
+  screen_reader_text: " about Mirror Conf"
 
 - text: Code of Conduct
   url: '/code-of-conduct/'
@@ -11,5 +13,5 @@
   url: https://ti.to/subvisual/mirrorconf
   target: "_blank"
 
-# - text: Sponsor us
-#   url: '/sponsorship.pdf'
+- text: Sponsor us
+  url: '/sponsorship.pdf'

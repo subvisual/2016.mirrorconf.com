@@ -1,0 +1,23 @@
+.Corner.bottom.left
+  .Rect.hero.bottom.left.u-relative
+    .Absolute.above
+      .Flex.column.u-halfLeft
+        .Vertical.top-to-bottom
+          .Text.strong.u-noWrap Braga, Portugal
+        .u-smallPushBottom
+    .Absolute.at-right.bottom
+      .Flex.row
+        .u-smallPushRight
+        .Text.strong.u-noWrap.u-halfBottom 23 & 24 September | 2016
+
+.Corner.top.right
+  .Rect.hero.top.right
+    .Absolute.below.right
+      .Flex.column.u-halfRight
+        .u-smallPushBottom
+        = link_to data.links.facebook, target: "_blank", class: "Img icons-facebook"
+          .u-screen-reader-text Facebook
+
+        .u-smallPushBottom
+        = link_to data.links.twitter, target: "_blank", class: "Img icons-twitter"
+          .u-screen-reader-text Twitter

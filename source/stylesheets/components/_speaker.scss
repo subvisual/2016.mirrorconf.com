@@ -21,7 +21,6 @@ $Speaker-title-values: (
 }
 
 .Speaker-inner {
-  background-size: cover;
   width: 100%;
   position: relative;
 
@@ -40,6 +39,10 @@ $Speaker-title-values: (
       rgba($color-amaranth, 0.9)
    );
   }
+}
+
+.Speaker-photo {
+  width: 100%;
 }
 
 .Speaker-info {

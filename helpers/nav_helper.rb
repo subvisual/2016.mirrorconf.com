@@ -3,6 +3,13 @@ module NavHelper
     classes += " Nav-link"
     classes += " Nav-current" if item.url.include?(current)
 
-    link_to item.text, item.url, target: item.target, class: classes
+    link_to item.url, target: item.target, class: classes do
+      [
+        item.text,
+        (content_tag :span, class: "u-screen-reader-text" do
+          item.screen_reader_text.to_s
+        end),
+      ].join
+    end
   end
 end

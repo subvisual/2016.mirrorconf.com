@@ -1,5 +1,6 @@
 .Speaker
-  .Speaker-inner style="background-image: url('/images/speakers/#{speaker.picture}')"
+  .Speaker-inner
+    img.Speaker-photo src="/images/speakers/#{speaker.picture}" alt=speaker.name
     .Speaker-info
       .Speaker-name = speaker.name
       .Speaker-title = speaker.title

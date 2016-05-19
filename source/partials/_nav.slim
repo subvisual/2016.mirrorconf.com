@@ -1,13 +1,13 @@
 .Nav
   .Flex.row.spaceBetween.alignCenter
-    = link_to "/"
+    = link_to title="/"
       .Img.logo
-    .u-desktop.Flex.row.spaceBetween
+        span.u-screen-reader-text Homepage
+    nav.u-desktop.Flex.row.spaceBetween role="navigation"
       .u-basePushRight
       - data.nav.each do |item|
         = nav_link item, current: current
         .u-basePushRight
-      .u-basePushRight
     .u-desktop
 
     .u-mobile#Burger.Burger
@@ -15,7 +15,7 @@
       .Burger-line
       .Burger-line
 
-  .u-mobile#Overlay.Overlay
+  .u-hideSpeech.u-mobile#Overlay.Overlay
     .Flex.column.alignCenter
       - data.nav.each do |item|
         = nav_link item, current: current
