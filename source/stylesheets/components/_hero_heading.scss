@@ -2,7 +2,7 @@ $HeroHeading-border: solid $color-white;
 $HeroHeading-bg-color: $color-amaranth;
 
 $HeroHeading-values: (
-  min-width: ($hero-heading-width-mobile, $hero-heading-width-desktop),
+  min-width: (0, $hero-heading-width-desktop),
   font-size: (36px, 160px),
   border-width: (6px, 12px),
   height: (66px, 260px),

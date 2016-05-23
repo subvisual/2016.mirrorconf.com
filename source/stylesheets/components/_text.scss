@@ -43,6 +43,12 @@ $Text-sizes: (small, base, large, heading);
   }
 }
 
+@each $size in $Text-sizes {
+  .Text.#{$size}-mobile {
+    @include mobile-font($size);
+  }
+}
+
 .Text.indicative {
 
   @include desktop {

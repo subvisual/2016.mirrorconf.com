@@ -36,6 +36,15 @@ $default-font-sizes: (
   }
 }
 
+@mixin mobile-font($size: 'base', $font-sizes: $default-font-sizes, $line-height: true) {
+  $mobile-size: map-get(map-get($font-sizes, 'mobile'), $size);
+
+  @include mobile {
+    @include single-font-size($mobile-size, $line-height)
+  }
+}
+
+
 @mixin single-font-size($size, $line-height) {
   font-size: $size;
   @if ($line-height) {
