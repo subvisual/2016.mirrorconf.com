@@ -25,20 +25,20 @@
         div
           p.Text.small.pink Emergency number
           .u-smallPushBottom
-          p.Text.pink.heading = data.contacts.emergency
-      .u-xLargePaddingBottom
+          a.Text.pink.heading.u-phoneNo href="tel://#{data.contacts.emergency}" = data.contacts.emergency
+      .u-largePaddingBottom
 
     .Grid-wideCol3
       .Flex.column
         .Text.pink.small Organizer phone
-        .Flex.row
+        a.Flex.row.u-phoneNo href="tel://+351#{data.contacts.organizer}"
           span.Text.pink.indicative +351
           .u-smallPushRight
           .Text.pink.heading =< data.contacts.organizer
         .u-largePushBottom
 
         .Text.pink.small Local taxi number
-        .Flex.row
+        a.Flex.row.u-phoneNo href="tel://+351#{data.contacts.taxi}"
           span.Text.pink.indicative +351
           .u-smallPushRight
           .Text.pink.heading = data.contacts.taxi

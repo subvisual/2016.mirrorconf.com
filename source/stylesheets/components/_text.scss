@@ -31,6 +31,10 @@ $Text-sizes: (small, base, large, heading);
   .Text.#{$name} {
     color: $color;
   }
+
+  .Text.#{$name}.phoneNo {
+    color: $color;
+  }
 }
 
 @each $size in $Text-sizes {
