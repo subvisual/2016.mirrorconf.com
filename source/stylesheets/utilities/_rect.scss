@@ -17,8 +17,10 @@ $Rect--hero-values: (
   border-left: $Rect-border;
 }
 
-.Rect.top:not(.hero) {
-  border-top: $Rect-border;
+.Rect.top {
+  @include desktop {
+    border-top: $Rect-border;
+  }
 }
 
 .Rect.right {
