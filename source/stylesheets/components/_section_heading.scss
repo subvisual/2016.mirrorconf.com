@@ -1,7 +1,8 @@
 $SectionHeading-colors: (
   orange: $color-maize,
   pink: $color-red-pink,
-  yellow: $color-maize,
+  blue: $color-blue,
+  grey: $color-charcoal-grey,
 );
 
 $SectionHeading-values: (
@@ -31,7 +32,7 @@ $SectionHeading--overlayed-values: (
 
 .SectionHeading.small {
   @include responsive($SectionHeading--small-values);
-  @include font(heading);
+  @include font(largeHeading);
 }
 
 .SectionHeading.overlayed {

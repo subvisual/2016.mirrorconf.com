@@ -15,3 +15,4 @@
 
 - text: Sponsor us
   url: '/sponsoring.pdf'
+  target: "_blank"

@@ -1,0 +1,16 @@
+.Panel.blue
+  .u-hugePaddingBottom
+
+  .Grid.four
+    .Grid-title
+      h2.SectionHeading.small.white where to stay
+
+    .Grid-wideCol.Grid-offset
+      .u-basePushBottom
+      hr.Separator.white
+      .u-basePushBottom
+
+      - data.hotels.each do |hotel|
+        = partial "practical-details/generic_hotel", locals: { hotel: hotel }
+        .u-largePushBottom
+  .u-basePaddingBottom

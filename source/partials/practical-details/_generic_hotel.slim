@@ -1,0 +1,31 @@
+h3.Text.large.white.strong = hotel.name
+.u-smallPushBottom
+
+.Flex.row
+  .Img.icons-star.u-xSmallPushRight
+  .Img.icons-star.u-xSmallPushRight
+  .Img.icons-star.u-xSmallPushRight
+  .Img.icons-star.u-xSmallPushRight
+.u-smallPushBottom
+
+.Flex.row-desktop.column-mobile
+  .Flex.column
+    p.Text.large.white.strong = hotel.single_price
+    p.Text.small.white.strong.transparent.u-serif single
+    .u-basePushBottom
+  .u-basePushRight
+
+  .Flex.column
+    p.Text.large.white.strong = hotel.double_price
+    p.Text.small.white.strong.transparent.u-serif double
+    .u-basePushBottom
+  .u-largePushRight
+
+  .Flex.column
+    p.Text.small.white.transparent.strong.u-serif = hotel.email
+    p.Text.small.white.transparent.strong.u-serif = hotel.phone
+    .u-basePushBottom
+
+p.Text.small.white.transparent
+  ' Walking distance to the venue:
+  = hotel.distance

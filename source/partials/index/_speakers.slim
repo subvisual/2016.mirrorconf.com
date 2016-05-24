@@ -1,8 +1,8 @@
-#speakers.Panel.sand
+#speakers.Panel.white
   .u-hugePaddingBottom
   .Grid.four
     .Grid-title
-      h2.SectionHeading.overlayed.orange speakers
+      h2.SectionHeading.overlayed.pink speakers
     - data.speakers.each do |speaker|
       .Grid-col
         = partial "index/speaker", locals: { speaker: speaker }
@@ -11,5 +11,5 @@
   .u-largePushBottom
 
   .Flex.justifyCenter
-    = link_to "Buy your ticket", data.links.tito, target: "_blank", class: "Button white"
+    = link_to "Buy your ticket", data.links.tito, target: "_blank", class: "Button amaranth"
   .u-hugePaddingBottom

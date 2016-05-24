@@ -62,7 +62,7 @@ $Speaker-title-values: (
 .Speaker-title {
   @include responsive($Speaker-title-values);
 
-  color: $color-maize;
+  color: $color-white;
   font-family: 'Merriweather';
   font-weight: 300;
 }

@@ -2,8 +2,8 @@ $Text-colors: (
   white: $color-white,
   pink: $color-red-pink,
   blue: $color-blue,
-  dark: $color-greyish-brown,
   yellow: $color-maize,
+  grey: $color-charcoal-grey,
 );
 
 $Text-sizes: (small, base, large, heading);
@@ -20,15 +20,18 @@ $Text-sizes: (small, base, large, heading);
   text-align: center;
 }
 
-.Text-link {
-  color: $color-red-pink;
+.Text.transparent {
+  opacity: 0.8;
+}
 
+.Text-link {
   font-weight: bold;
   text-decoration: none;
 }
 
 @each $name, $color in $Text-colors {
-  .Text.#{$name} {
+  .Text.#{$name},
+  .Text-link {
     color: $color;
   }
 

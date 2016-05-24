@@ -10,6 +10,10 @@ $Imgs: (
   'icons/twitter': (
     width: (20px, 30px),
     height: (20px, 30px)
+  ),
+  'icons/star': (
+    width: (20px, 20px),
+    height: (20px, 20px)
   )
 );
 
@@ -32,5 +36,20 @@ $Imgs: (
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
+
+.Img.braga {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+
+  margin-bottom: 25%;
+
+  img {
+    width: 100%;
+
+    margin-bottom: -25%;
   }
 }

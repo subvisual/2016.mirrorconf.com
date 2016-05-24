@@ -1,22 +1,11 @@
-.Panel.sand
+.Panel.white
   .u-hugePaddingBottom
-  .Flex.row-desktop.column-mobile
-    .Flex-grow.Flex-fullHeightChild
-      .Panel.amaranth.centered
-        .u-largePaddingBottom
-        .Flex.row
-          .u-largePushRight
-          p.Text.white.heading.strong join us and step into the web's future.
-          .u-largePushRight
-        .u-largePaddingBottom
-    .Flex-grow.Flex-fullHeightChild
-      .Panel.sand.centered
-        .u-largePaddingBottom
-        .Flex.row
-          .u-largePushRight
-          div
-            p.Text.pink.heading.strong enough about us. we wanna meet you.
-            .u-basePushBottom
-            = link_to "Buy your ticket", data.links.tito, target: "_blank", class: "Button amaranth"
-          .u-largePushRight
+  .Grid.five
+    .Grid-title
+      p.Text.grey.heading.strong
+        | enough about us.
+        br
+        | we wanna meet you.
+      .u-basePushBottom
+      = link_to "Buy your ticket", data.links.tito, target: "_blank", class: "Button blue"
   .u-hugePaddingBottom

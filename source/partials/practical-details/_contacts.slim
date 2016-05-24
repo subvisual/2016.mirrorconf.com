@@ -1,0 +1,30 @@
+.Panel.white.padded
+  .u-largePaddingBottom
+  .Grid.four
+    .Grid-col
+      .Flex.row
+        div
+          p.Text.strong.grey Still have questions?
+          .u-smallPushBottom
+          p.Text.small.grey We're here to help.
+          .u-basePushBottom
+          = link_to "Contact us", data.links.contact_mail, target: "_blank", class: "Button blue"
+      .u-largePaddingBottom
+
+    .Grid-wideCol3
+      .Flex.column
+        .Text.grey.small Organizer phone
+        .u-xSmallPushBottom
+        a.Flex.row.u-phoneNo href="tel://+351#{data.contacts.organizer}"
+          span.Text.blue.indicative +351
+          .u-smallPushRight
+          .Text.blue.heading =< data.contacts.organizer
+        .u-basePushBottom
+
+        .Text.grey.small Local taxi number
+        .u-xSmallPushBottom
+        a.Flex.row.u-phoneNo href="tel://+351#{data.contacts.taxi}"
+          span.Text.blue.indicative +351
+          .u-smallPushRight
+          .Text.blue.heading = data.contacts.taxi
+        .u-xLargePaddingBottom

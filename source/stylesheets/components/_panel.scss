@@ -8,8 +8,9 @@ $Panel--padded-content-responsive: (
 
 $Panel-colors: (
   amaranth: $color-amaranth,
-  sand: $color-very-light-pink,
   blue: $color-blue,
+  grey: $color-charcoal-grey,
+  white: $color-almost-white,
 );
 
 @each $name, $color in $Panel-colors {
