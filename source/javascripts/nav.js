@@ -5,5 +5,6 @@ window.Nav = {
 
   toggleNav: function() {
     $("#Overlay, #Burger").toggleClass("is-open");
+    $("body").toggleClass("no-scroll");
   }
 }

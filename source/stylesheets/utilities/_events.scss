@@ -1,3 +1,7 @@
 .u-noEvents {
   pointer-events: none;
 }
+
+.no-scroll {
+  overflow-y: hidden;
+}
