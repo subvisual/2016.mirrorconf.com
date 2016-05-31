@@ -10,10 +10,6 @@ $Button-responsive: (
   padding: (0 20px, 0 40px),
 );
 
-$Button--white-values: (
-  width: ($hero-heading-width-mobile, 240px)
-);
-
 .Button {
   @include font(small);
   @include responsive($Button-responsive);
@@ -36,58 +32,66 @@ $Button--white-values: (
   transition: all 0.3s ease-out;
 }
 
-.Button.white {
-  background-color: $color-white;
+.Button {
+  border: solid 3px;
+}
 
-  color: $Button--hero-color;
+@mixin Button--border {
+  border: solid 3px;
+}
 
-  border: solid 2px $color-white;
-
-  &:hover {
+@mixin Button--primary-colors($color: $color-amaranth) {
+  &:not(.onColor) {
     color: $color-white;
-
-    background-color: $Button--hero-color;
+    background-color: $color;
+    border-color: $color;
   }
-}
 
-.Button.amaranth {
-  background-color: $color-amaranth;
-
-  color: $color-white;
-
-  border: solid 2px $color-amaranth;
-
-  &:hover {
-    color: $color-amaranth;
-
+  &.onColor {
+    color: $color;
     background-color: $color-white;
+    border-color: $color-white;
   }
 }
 
-.Button.blue {
-  background-color: $color-blue;
-
-  color: $color-white;
-
-  border: solid 2px $color-blue;
-
-  &:hover {
-    background-color: $color-white;
-
-    color: $color-blue;
-  }
-}
-
-.Button.transparent {
+@mixin Button--secondary-colors($color: $color-amaranth) {
   background-color: transparent;
 
-  color: $color-amaranth;
+  &:not(.onColor) {
+    border-color: $color;
+    color: $color;
+  }
 
-  border: solid 2px $color-amaranth;
-
-  &:hover {
-    background-color: $color-amaranth;
-
+  &.onColor {
+    border-color: $color-white;
     color: $color-white;
+  }
+}
+
+.Button.primary.pink {
+  @include Button--primary-colors($color-amaranth);
+  &:hover {
+    @include Button--secondary-colors($color-amaranth);
+  }
+}
+
+.Button.primary.blue {
+  @include Button--primary-colors($color-blue);
+  &:hover {
+    @include Button--secondary-colors($color-blue);
+  }
+}
+
+.Button.secondary.pink {
+  @include Button--secondary-colors($color-amaranth);
+  &:hover {
+    @include Button--primary-colors($color-amaranth);
+  }
+}
+
+.Button.secondary.blue {
+  @include Button--secondary-colors($color-blue);
+  &:hover {
+    @include Button--primary-colors($color-blue);
   }
 }

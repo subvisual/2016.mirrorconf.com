@@ -9,7 +9,7 @@
       .Flex.row-desktop.column-mobile.spaceBetween.alignCenter-mobile
         .Flex.column.u-serif
           - data.nav.each do |item|
-            = nav_link item, classes: "Nav-smallLink"
+            = nav_link item, classes: "Nav-smallLink Nav-footerLink"
             .u-smallPushBottom
         .Flex.row
           = link_to data.links.facebook, target: "_blank", class: "Img icons-facebook"

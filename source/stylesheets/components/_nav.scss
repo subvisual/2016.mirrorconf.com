@@ -38,7 +38,9 @@ $Nav-values: (
   &.active {
     border-bottom: solid 1px $Nav-link-color;
   }
+}
 
+.Nav-link:not(.Nav-footerLink) {
   &:after {
     content: '';
 
@@ -61,11 +63,17 @@ $Nav-values: (
 .Nav-current,
 .Nav-link:hover,
 .Nav-link.active {
-  &:after {
-    transform: scaleX(1);
+  &:not(.Nav-footerLink) {
+    &:after {
+      transform: scaleX(1);
+    }
   }
 }
 
 .Nav-smallLink {
   @include font(small);
+}
+
+.Nav-footerLink:hover {
+  font-weight: bold;
 }
