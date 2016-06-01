@@ -1,7 +1,8 @@
 h3.Text.heading.grey.strong Porto (OPO)
 .u-smallPushBottom
 p.Text.grey.small.u-serif The closest airport is in Porto (OPO), from where you can either:
-br
-ol.Text.grey.small.u-serif
-  li catch a direct bus with  service called #{link_to "GetBus", data.links.getbus, target: "_blank", class: "Text-link"}
-  li catch a #{link_to "train at Porto Campanhã", data.links.train_porto, target: "_blank", class: "Text-link"} (~1 hour trip)
+.u-basePushBottom
+ol.NumberedList.blue
+  li.Text.grey.small.u-serif catch a direct bus with  service called #{link_to "GetBus", data.links.getbus, target: "_blank", class: "Text-link"}
+  .u-basePushBottom
+  li.Text.grey.small.u-serif catch a #{link_to "train at Porto Campanhã", data.links.train_porto, target: "_blank", class: "Text-link"} (~1 hour trip)
