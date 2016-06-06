@@ -1,0 +1,96 @@
+$Border-width: 3px;
+$Border-horizontal-duration: 0.6s;
+$Border-vertical-duration: 0.3s;
+
+.Border {
+  position: relative;
+
+  color: $color-white;
+
+  line-height: 100px;
+  text-align: center;
+}
+
+.Border-line {
+  position: absolute;
+
+  background-color: $color-white;
+
+  transition: transform linear;
+}
+
+.Border-top,
+.Border-bottom {
+  width: 100%;
+  height: 10px;
+}
+
+.Border-right,
+.Border-left {
+  width: 10px;
+  height: 100%;
+}
+
+.Border-top,
+.Border-left,
+.Border-bottom {
+  left: 0;
+}
+
+.Border-left,
+.Border-top,
+.Border-right {
+  top: 0;
+}
+
+.Border-right {
+  right: 0;
+}
+
+.Border-bottom {
+  bottom: 0;
+}
+
+.Border-top,
+.Border-bottom {
+  transform: scaleX(0);
+
+  transition-duration: $Border-horizontal-duration;
+}
+
+.Border-left,
+.Border-right {
+  transform: scaleY(0);
+
+  transition-duration: $Border-vertical-duration;
+}
+
+.Border-top {
+  transform-origin: center right;
+
+  transition-delay: 0;
+}
+
+.Border-right {
+  transform-origin: bottom center;
+
+  transition-delay: $Border-horizontal-duration * 2 + $Border-vertical-duration;
+}
+
+.Border-bottom {
+  transform-origin: center left;
+
+  transition-delay: $Border-horizontal-duration + $Border-vertical-duration;
+}
+
+.Border-left {
+  transform-origin: top center;
+
+  transition-delay: $Border-horizontal-duration;
+}
+
+.Border.active {
+  .Border-line {
+    transform: none;
+  }
+}
