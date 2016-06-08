@@ -4,7 +4,6 @@ $HeroHeading-bg-color: $color-amaranth;
 $HeroHeading-values: (
   min-width: (0, $hero-heading-width-desktop),
   font-size: (36px, 160px),
-  border-width: (6px, 12px),
   height: (66px, 260px),
   line-height: (46px, 170px),
   padding: (0 20px, 0 90px)
@@ -27,8 +26,6 @@ $HeroHeading-bg-colors: (
   justify-content: center;
 
   box-sizing: border-box;
-
-  // border: $HeroHeading-border;
 
   font-weight: bold;
 

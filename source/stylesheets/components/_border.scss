@@ -1,6 +1,15 @@
-$Border-width: 3px;
 $Border-horizontal-duration: 0.6s;
 $Border-vertical-duration: 0.3s;
+
+@mixin Border--borderWidth($type) {
+  @include mobile {
+    #{$type}: 6px;
+  }
+
+  @include desktop {
+    #{$type}: 12px;
+  }
+}
 
 .Border {
   position: relative;
@@ -19,15 +28,19 @@ $Border-vertical-duration: 0.3s;
   transition: transform linear;
 }
 
+.Border.blue .Border-line {
+  background-color: $color-blue;
+}
+
 .Border-top,
 .Border-bottom {
+  @include Border--borderWidth(height);
   width: 100%;
-  height: 10px;
 }
 
 .Border-right,
 .Border-left {
-  width: 10px;
+  @include Border--borderWidth(width);
   height: 100%;
 }
 

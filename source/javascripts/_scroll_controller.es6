@@ -7,7 +7,8 @@ function setupBorderAnimations() {
       on("enter", () => $(this).addClass("active"));
   }
 
-  $(".Border").each(activateOnScroll)
+  $(".Border.immediate").addClass("active")
+  $(".Border.onScroll").each(activateOnScroll)
 }
 
 $(setupBorderAnimations);

@@ -9,10 +9,15 @@
     = partial "hero_overlay"
 
     .Flex.column.alignCenter
-      h1.HeroHeading.twoLines.amaranth
-        | code of
-        br
-        | conduct
+      h1.Border.immediate
+        .Border-line.Border-top
+        .Border-line.Border-right
+        .Border-line.Border-bottom
+        .Border-line.Border-left
+        .HeroHeading.twoLines.amaranth
+          | code of
+          br
+          | conduct
 
 - content_for :javascripts
   javascript:
