@@ -1,0 +1,45 @@
+$SpeakerPlaceholder-values: (
+  height: (280px, 355px),
+);
+
+$SpeakerPlaceholder-title-values: (
+  font-size: (26px, 38px),
+  line-height: (36px, 44px)
+);
+
+$SpeakerPlaceholder-subTitle-values: (
+  font-size: (26px, 38px),
+  line-height: (24px, 28px)
+);
+
+.SpeakerPlaceholder {
+  @include responsive($SpeakerPlaceholder-values);
+
+  border: solid 8px $color-red-pink;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  color: $color-charcoal-grey;
+
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.SpeakerPlaceholder-title {
+  @include responsive($SpeakerPlaceholder-title-values);
+
+  color: $color-red-pink;
+  font-weight: bold;
+}
+
+.SpeakerPlaceholder-subTitle {
+  
+}
+
+.SpeakerPlaceholder-subTitle {
+  @include font(small);
+
+  color: $color-charcoal-grey;
+}
