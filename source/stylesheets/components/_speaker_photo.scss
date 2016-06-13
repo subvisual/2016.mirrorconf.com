@@ -1,0 +1,28 @@
+.SpeakerPhoto {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+.SpeakerPhoto-photo {
+  width: 100%;
+}
+
+.SpeakerPhoto:after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 0;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-light-purple, 0.4),
+    rgba($color-amaranth, 0.9)
+  );
+}

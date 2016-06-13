@@ -12,6 +12,9 @@
 - text: Code of Conduct
   url: '/code-of-conduct/'
 
+- text: Speakers
+  url: '/speakers/'
+
 - text: Buy your ticket
   url: https://ti.to/subvisual/mirrorconf
   target: "_blank"

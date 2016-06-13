@@ -1,0 +1,16 @@
+$SpeakerDesc-photo-values: (
+  width: (280px, 355px),
+  height: (280px, 355px),
+);
+
+$SpeakerDesc-social-values: (
+  width: (280px, 355px),
+);
+
+.SpeakerDesc-photo {
+  @include responsive($SpeakerDesc-photo-values);
+}
+
+.SpeakerDesc-social {
+  @include responsive($SpeakerDesc-social-values);
+}

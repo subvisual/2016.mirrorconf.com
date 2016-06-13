@@ -1,0 +1,18 @@
+- content_for :prefetch
+  link rel="prefetch" href="/anim/hero-intro.json"
+  link rel="prefetch" href="/anim/hero-loop.json"
+
+.Panel.hero.padded.blue.u-relative
+  = partial "hero_anim"
+
+  .Panel-content.u-relative
+    = partial "hero_overlay"
+
+    .Flex.column.alignCenter
+      h1.HeroHeading.blue speakers
+
+- content_for :javascripts
+  javascript:
+    var animator = new HeroAnim();
+
+    $(animator.start.bind(animator))

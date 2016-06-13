@@ -10,6 +10,7 @@
     end: "11:15"
     duration: three-quarters
     type: primary
+    url: "/speakers#kyle-fiedler"
 
   - name: Coffee Break
     start: "11:15"
@@ -22,12 +23,14 @@
     end: "12:00"
     duration: half-hour
     type: primary
+    url: "/speakers#burocratik"
 
   - name: Tibor Kranjc
     start: "12:00"
     end: "12:30"
     duration: half-hour
     type: primary
+    url: "/speakers#tibor-kranjc"
 
   - name: Lunch
     start: "12:30"
@@ -46,12 +49,14 @@
     end: "15:30"
     duration: half-hour
     type: primary
+    url: "/speakers#joao-granado"
 
   - name: Sarah Drasner
     start: "15:30"
     end: "16:00"
     duration: half-hour
     type: primary
+    url: "/speakers#sarah-drasner"
 
   - name: Coffee Break
     start: "16:00"
@@ -64,12 +69,14 @@
     end: "17:00"
     duration: three-quarters
     type: primary
+    url: "/speakers#dan-mall"
 
   - name: Design Disruptors
     start: "17:00"
     end: "18:00"
     duration: hour
     type: primary
+    url: "#screening"
 
   - name: Closing
     start: "18:00"
@@ -88,6 +95,7 @@
     end: "11:15"
     duration: three-quarters
     type: primary
+    url: "/speakers#leonie-watson"
 
   - name: Coffee Break
     start: "11:15"
@@ -100,12 +108,14 @@
     end: "12:00"
     duration: half-hour
     type: primary
+    url: "/speakers#bryant-chou"
 
   - name: James Chudley
     start: "12:00"
     end: "12:30"
     duration: half-hour
     type: primary
+    url: "/speakers#james-chudley"
 
   - name: Lunch
     start: "12:30"
@@ -124,12 +134,14 @@
     end: "15:30"
     duration: half-hour
     type: primary
+    url: "/speakers#tiago-pedras"
 
   - name: Darius Kazemi
     start: "15:30"
     end: "16:00"
     duration: half-hour
     type: primary
+    url: "/speakers#darius-kazemi"
 
   - name: Coffee Break
     start: "16:00"
@@ -142,6 +154,7 @@
     end: "17:00"
     duration: three-quarters
     type: primary
+    url: "/speakers#lea-verou"
 
   - name: Closing
     start: "18:00"

@@ -1,0 +1,12 @@
+.Panel.white
+  .u-hugePaddingBottom
+
+  .Grid.four
+    - data.speakers.each do |speaker|
+      .Grid-row
+        = partial "speakers/speaker", locals: { speaker: speaker }
+        .Flex.row-desktop
+          div asd
+          div asd
+
+  .u-hugePaddingBottom

@@ -9,7 +9,7 @@
       - item.events.each do |event|
         hr.ScheduleTable-separator
 
-        div class="Event #{event.duration}"
+        a.div class="Event #{event.duration}" href=event.url
           = event_time(event.start, event.end, mobile_only: index.odd?)
           div
             p class="Event-name #{event.type}" = event.name

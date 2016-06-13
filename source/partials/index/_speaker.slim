@@ -1,6 +1,7 @@
-.Speaker
+a.Speaker href="/speakers##{speaker.anchor}"
   .Speaker-inner
-    img.Speaker-photo src="/images/speakers/#{speaker.picture}" alt=speaker.name
+    .SpeakerPhoto
+      img.SpeakerPhoto-photo src="/images/speakers/#{speaker.picture}" alt=speaker.name
     .Speaker-info
       .Speaker-name = speaker.name
       .Speaker-title = speaker.title

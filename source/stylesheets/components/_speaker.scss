@@ -25,28 +25,7 @@ $Speaker-info-values: (
 }
 
 .Speaker-inner {
-  width: 100%;
   position: relative;
-
-  &::before {
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-
-    background-image: linear-gradient(
-      to bottom,
-      rgba($color-light-purple, 0.4),
-      rgba($color-amaranth, 0.9)
-   );
-  }
-}
-
-.Speaker-photo {
-  width: 100%;
 }
 
 .Speaker-info {
@@ -61,6 +40,7 @@ $Speaker-info-values: (
 
   font-family: 'Montserrat Alternates';
   font-weight: bold;
+  color: $color-white;
 }
 
 .Speaker-title {
