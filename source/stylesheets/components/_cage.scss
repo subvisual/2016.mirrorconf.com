@@ -10,6 +10,14 @@ $Cage-sizes: (
   max-width: 100%;
 }
 
+.Cage.w250 {
+  width: 250px;
+}
+
+.Cage.center {
+  margin: auto;
+}
+
 @each $name, $value in $Cage-sizes {
   .Cage.#{$name} {
     width: $value;
@@ -40,3 +48,14 @@ $Cage-sizes: (
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.Cage.footer {
+  @include desktop {
+    width: 1120px;
+  }
+
+  @include mobile {
+    max-width: 320px;
+  }
+}
+

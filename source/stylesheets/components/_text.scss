@@ -29,6 +29,10 @@ $Text-sizes: (small, base, large, heading);
   text-decoration: none;
 }
 
+.Text.noUnderline {
+  text-decoration: none;
+}
+
 @each $name, $color in $Text-colors {
   .Text.#{$name},
   .Text-link {
