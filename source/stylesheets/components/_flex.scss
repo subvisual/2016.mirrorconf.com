@@ -71,6 +71,10 @@
     flex-direction: column;
   }
 
+  .Flex.columnReverse-mobile {
+    flex-direction: column-reverse;
+  }
+
   .Flex.alignCenter-mobile {
     align-items: center;
   }
