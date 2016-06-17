@@ -1,6 +1,8 @@
 body {
   @include font('base');
 
+  background-color: $color-almost-white;
+
   color: $color-white;
 
   font-family: $font-family;
