@@ -1,11 +1,8 @@
 h3.Text.large.white.strong = hotel.name
-.u-smallPushBottom
 
 .Flex.row
-  .Img.icons-star.u-xSmallPushRight
-  .Img.icons-star.u-xSmallPushRight
-  .Img.icons-star.u-xSmallPushRight
-  .Img.icons-star.u-xSmallPushRight
+  - hotel.stars.downto(1)
+    p.Text.strong.xLarge.white.u-xSmallPushRight ☆
 .u-smallPushBottom
 
 .Flex.row-desktop.column-mobile

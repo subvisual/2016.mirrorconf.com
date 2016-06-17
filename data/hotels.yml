@@ -1,4 +1,5 @@
 - name: Hotel Mercure Braga Centro
+  stars: 4
   single_price: 53€
   double_price: 60€
   email: h8308@accor.com
@@ -6,6 +7,7 @@
   distance: 19 minutes
 
 - name: Hotel IBIS Braga Centro
+  stars: 2
   single_price: 37,5€
   double_price: 44€
   email: h1802@accor.com
@@ -13,6 +15,7 @@
   distance: 16 minutes
 
 - name: Hotel IBIS Budget Braga
+  stars: 2
   single_price: 30,5€
   double_price: 34€
   email: h9042@accor.com
