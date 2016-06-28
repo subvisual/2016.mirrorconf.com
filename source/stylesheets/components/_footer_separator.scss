@@ -1,0 +1,21 @@
+$FooterSeparator-width: 60px;
+$FooterSeparator-color: rgba($color-white, 0.4);
+
+$FooterSeparator-values: (
+  height: (1px, 0px),
+);
+
+.FooterSeparator {
+  @include responsive($FooterSeparator-values);
+
+  width: 100%;
+
+  display: inline-block;
+
+  margin: 0;
+
+  background-color: $FooterSeparator-color;
+
+  outline: none;
+  border: 0;
+}

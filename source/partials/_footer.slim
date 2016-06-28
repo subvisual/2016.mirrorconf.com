@@ -1,7 +1,7 @@
 .Panel.grey
-  .u-largePaddingBottom
+  .u-largePaddingBottomAlways
 
-  .Cage.w1120.center.padded
+  .Cage.footer.center.padded
     .Flex.row-desktop.column-mobile.justifyCenter-desktop
       .Cage.w250
         .Img.logo
@@ -15,6 +15,8 @@
         = link_to data.contacts.email, "mailto:#{data.contacts.email}", class: "Text white small noUnderline"
       .u-basePushRight.u-largePushBottom
 
+      .FooterSeparator.u-basePushBottom.u-mobile
+
       .Cage.w250
         h2.Text.large.strong.white Find your way
         .u-basePushBottom
@@ -23,6 +25,8 @@
             = nav_link item, classes: "Nav-smallLink Nav-footerLink"
             .u-smallPushBottom
       .u-basePushRight.u-largePushBottom
+
+      .FooterSeparator.u-basePushBottom.u-mobile
 
       .Cage.w250
         h2.Text.large.strong.white Follow us
@@ -41,7 +45,8 @@
       .u-basePushRight.u-largePushBottom
 
     .u-basePushBottom
-    .FooterLine
+    .FooterLine.u-desktop
+    .FooterSeparator.u-basePushBottom.u-mobile
     .u-basePushBottom
 
     h2.Text.white.strong.small Mirror Conf is powered by

@@ -10,10 +10,6 @@ $Cage-sizes: (
   max-width: 100%;
 }
 
-.Cage.w1120 {
-  width: 1120px;
-}
-
 .Cage.w250 {
   width: 250px;
 }
@@ -52,3 +48,14 @@ $Cage-sizes: (
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.Cage.footer {
+  @include desktop {
+    width: 1120px;
+  }
+
+  @include mobile {
+    max-width: 320px;
+  }
+}
+
