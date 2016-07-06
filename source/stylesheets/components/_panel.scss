@@ -11,6 +11,7 @@ $Panel-colors: (
   blue: $color-blue,
   grey: $color-charcoal-grey,
   white: $color-almost-white,
+  pale-grey: $color-pale-grey,
 );
 
 @each $name, $color in $Panel-colors {
