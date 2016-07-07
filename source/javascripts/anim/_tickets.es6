@@ -16,20 +16,21 @@ class TicketsAnim {
 
     let scrollCallback = () => {
       const animStart = animTop + animHeight - screenHeight;
-      const animEnd   = animTop;
+      const animEnd   = animStart + 400;
       let baseOffset;
-      let multiplier = 1;
+      let multiplier = 2;
 
       if (screenWidth > 1150) {
-        baseOffset = 400;
-      } else {
         baseOffset = 300;
-        multiplier = 0.3;
-
+      } else {
+        baseOffset = 200;
+        multiplier = 0;
       }
 
-      const position = clamp(win.scrollTop(), animStart - 400, animEnd + 200);
+      const position = clamp(win.scrollTop(), animStart - 0, animEnd + 0);
       const offset = baseOffset - (position - animStart) / (animEnd - animStart) * 100 * multiplier;
+      console.log(`position: ${position}`)
+      console.log(`offset: ${offset}`)
       $('.TicketsAnim-image').css('transform', `translateY(${offset}px)`)
     };
 
