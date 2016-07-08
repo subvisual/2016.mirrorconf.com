@@ -39,7 +39,19 @@ $Imgs: (
   }
 }
 
-.Img.braga {
+.Img.braga.mobile {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+
+  img {
+    height: 500px;
+  }
+}
+
+.Img.braga.desktop {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
