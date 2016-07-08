@@ -1,8 +1,9 @@
-.Panel.blue.u-desktop
+.u-desktop
   .Grid.four
     .Grid-title
-      = link_to "/images/braga.jpg", class: "Img braga desktop", target: "_blank"
-        = image_tag "/images/braga.jpg"
+      = link_to "/images/#{picture}", class: "Img separator desktop", target: "_blank"
+        = image_tag "/images/#{picture}"
+
 .u-mobile
-  = link_to "/images/braga.jpg", class: "Img braga mobile", target: "_blank"
-    = image_tag "/images/braga.jpg"
+  = link_to "/images/#{picture}", class: "Img separator mobile", target: "_blank"
+    = image_tag "/images/#{picture}"
