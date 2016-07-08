@@ -1,0 +1,31 @@
+.Sponsor-logo {
+  max-width: 100%;
+
+  @include mobile {
+    // transform: scale()
+  }
+}
+
+@include mobile {
+  .Sponsor.platinum .Sponsor-logo {
+    height: 70px;
+  }
+
+  .Sponsor.gold .Sponsor-logo {
+    height: 60px;
+  }
+
+  .Sponsor.landingjobs .Sponsor-logo {
+    width: 279px;
+    height: 40px;
+  }
+
+  .Sponsor.stone .Sponsor-logo {
+    height: 50px;
+  }
+
+  .Sponsor.axure .Sponsor-logo {
+    width: 279px;
+    height: 43px;
+  }
+}

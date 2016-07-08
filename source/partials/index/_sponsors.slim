@@ -1,0 +1,14 @@
+#sponsors.Panel.white
+  .u-hugePaddingBottom
+  .Grid.four
+    .Grid-title
+      h2.SectionHeading.pink sponsors
+
+      .u-basePushBottom
+      = partial "index/sponsors/sponsors_of_type", locals: { type: :platinum }
+      = partial "index/sponsors/sponsors_of_type", locals: { type: :gold }
+      = partial "index/sponsors/sponsors_of_type", locals: { type: :stone }
+
+  .u-desktop
+    .u-hugePaddingBottom
+    .u-basePaddingBottom

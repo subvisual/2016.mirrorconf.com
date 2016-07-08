@@ -2,7 +2,8 @@
 $breakpoints: (
   phone: 600px,
   tablet: 768px,
-  desktop: 1150px
+  desktop: 1150px,
+  design-disruptors-desktop: 960px
 );
 // scss-lint:enable TrailingSemicolon
 @mixin mobile {
@@ -25,6 +26,18 @@ $breakpoints: (
 
 @mixin tablet {
   @include media('<tablet') {
+    @content;
+  }
+}
+
+@mixin design-disruptors-mobile {
+  @include media('<design-disruptors-desktop') {
+    @content;
+  }
+}
+
+@mixin design-disruptors-desktop {
+  @include media('>=design-disruptors-desktop') {
     @content;
   }
 }

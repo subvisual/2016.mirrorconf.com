@@ -1,0 +1,8 @@
+hr.Separator.grey
+.u-basePushBottom
+h3.SectionHeading.small.grey = type
+.u-basePushBottom
+.Flex.row.wrap.alignCenter
+  - data.sponsors.public_send(type).each do |sponsor|
+      = partial "index/sponsors/sponsor", locals: { sponsor: sponsor, type: type }
+.u-basePushBottom

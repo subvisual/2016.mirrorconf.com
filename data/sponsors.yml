@@ -1,0 +1,22 @@
+platinum:
+  - name: Ginetta
+    image: ginetta.png
+    url: http://ginetta.net/
+
+gold:
+  - name: Landing.jobs
+    image: landing.jobs.png
+    modifier: landingjobs
+    url: https://landing.jobs/
+  - name: Seegno
+    image: seegno.png
+    url: http://seegno.com/
+
+stone:
+  - name: Balsamiq
+    image: balsamiq.png
+    url: https://balsamiq.com/
+  - name: axure
+    modifier: axure
+    image: axure.png
+    url: http://www.axure.com/

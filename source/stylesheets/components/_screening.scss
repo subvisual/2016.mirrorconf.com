@@ -24,7 +24,14 @@
   &:after {
     z-index: 1;
 
-    background: url(/images/header-intro-desktop.svg) center center no-repeat;
+    @include design-disruptors-mobile {
+      background: url(/images/header-intro-mobile.svg) center center no-repeat;
+      background-size: cover;
+    }
+
+    @include design-disruptors-desktop {
+      background: url(/images/header-intro-desktop.svg) center center no-repeat;
+    }
   }
 }
 
