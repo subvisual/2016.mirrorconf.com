@@ -29,8 +29,6 @@ class TicketsAnim {
 
       const position = clamp(win.scrollTop(), animStart - 0, animEnd + 0);
       const offset = baseOffset - (position - animStart) / (animEnd - animStart) * 100 * multiplier;
-      console.log(`position: ${position}`)
-      console.log(`offset: ${offset}`)
       $('.TicketsAnim-image').css('transform', `translateY(${offset}px)`)
     };
 
