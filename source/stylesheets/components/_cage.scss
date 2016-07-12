@@ -50,6 +50,8 @@ $Cage-sizes: (
 }
 
 .Cage.footer {
+  padding-bottom: 1px;
+
   @include desktop {
     width: 1120px;
   }

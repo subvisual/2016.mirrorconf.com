@@ -1,35 +1,42 @@
 .Panel.grey
-  .u-largePaddingBottomAlways
+  .u-largePaddingBottom
 
   .Cage.footer.center.padded
     .Flex.row-desktop.column-mobile.justifyCenter-desktop
       .Cage.w250
         .Img.logo
-      .u-basePushRight.u-largePushBottom
+      .u-basePushRight.u-basePushBottom
 
       .Cage.w250
-        h2.Text.large.strong.white Contact
-        .u-basePushBottom
-        p.Text.white.small = "+351 " + data.contacts.organizer
+        h2.Text.large.base-mobile.strong.white Contact
+        div.u-mobile style="margin-bottom: 15px"
+        .u-basePushBottom.u-desktop
+        a.u-phoneNo href="+351#{data.contacts.organizer}"
+          .Text.white.small = "+351 " + data.contacts.organizer
         .u-smallPushBottom
         = link_to data.contacts.email, "mailto:#{data.contacts.email}", class: "Text white small noUnderline"
-      .u-basePushRight.u-largePushBottom
+      .u-basePushRight.u-basePushBottom
 
       .FooterSeparator.u-basePushBottom.u-mobile
 
-      .Cage.w250
-        h2.Text.large.strong.white Find your way
-        .u-basePushBottom
-        .Flex.column.u-serif
+      .Cage.w250.directions
+        input type="checkbox" name="directions-toggle" id="directions-toggle"
+        h2.Text.large.base-mobile.strong.white.directions-title
+          span Find your way
+          label for="directions-toggle"
+
+        .u-basePushBottom.u-desktop
+        .Flex.column.u-serif.content
           - data.nav.each do |item|
-            = nav_link item, classes: "Nav-smallLink Nav-footerLink"
             .u-smallPushBottom
-      .u-basePushRight.u-largePushBottom
+            = nav_link item, classes: "Nav-smallLink Nav-footerLink"
+          .u-basePushBottom.u-desktop
+      .u-basePushRight.u-basePushBottom
 
       .FooterSeparator.u-basePushBottom.u-mobile
 
       .Cage.w250
-        h2.Text.large.strong.white Follow us
+        h2.Text.large.base-mobile.strong.white Follow us
         .u-basePushBottom
         .Flex.row
 
@@ -42,23 +49,22 @@
           = link_to data.links.twitter, target: "_blank", class: "SocialButton twitter"
             .Img.icons-twitter
             .u-screen-reader-text Twitter
-      .u-basePushRight.u-largePushBottom
+        .u-basePushBottom.u-mobile
 
-    .u-basePushBottom
     .FooterLine.u-desktop
-    .FooterSeparator.u-basePushBottom.u-mobile
-    .u-basePushBottom
+    .u-basePushBottom.u-desktop
+    .FooterSeparator.u-smallPushBottom.u-mobile
 
     h2.Text.white.strong.small Mirror Conf is powered by
     .u-basePushBottom
 
     .Flex.row
-      = link_to data.links.gen, class: "Img logos-gen"
+      = link_to data.links.gen, target: "_blank", class: "Img logos-gen"
         .u-screen-reader-text Gen design studio
 
       .u-basePushRight
 
-      = link_to data.links.gen, class: "Img logos-subvisual"
+      = link_to data.links.subvisual, target: "_blank", class: "Img logos-subvisual"
         .u-screen-reader-text Subvisual
 
     .u-largePushBottom

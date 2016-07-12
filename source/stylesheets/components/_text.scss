@@ -50,6 +50,12 @@ $Text-sizes: (small, base, large, heading);
   }
 }
 
+.Text.base-mobile {
+  @include mobile {
+    @include font('base');
+  }
+}
+
 @each $size in $Text-sizes {
   .Text.#{$size}-mobile {
     @include mobile-font($size);
