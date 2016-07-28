@@ -11,6 +11,9 @@ gold:
   - name: Seegno
     image: seegno.png
     url: http://seegno.com/
+  - name: Designer News
+    image: dn.png
+    url: https://www.designernews.co/
 
 stone:
   - name: Balsamiq
