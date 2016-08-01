@@ -19,13 +19,7 @@ $Nav-values: (
 
   font-family: $font-family-serif;
 
-  @include desktop {
-    @include font(small);
-  }
-
-  @include mobile {
-    @include font(base);
-  }
+  @include font(nav);
 }
 
 .Nav-link {

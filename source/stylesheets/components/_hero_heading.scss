@@ -3,15 +3,15 @@ $HeroHeading-bg-color: $color-amaranth;
 
 $HeroHeading-values: (
   min-width: (0, $hero-heading-width-desktop),
-  font-size: (36px, 160px),
+  font-size: (36px, 90px),
   border-width: (6px, 12px),
-  height: (66px, 260px),
-  line-height: (46px, 170px),
+  height: (66px, 210px),
+  line-height: (46px, 110px),
   padding: (0 20px, 0 90px)
 );
 
 $HeroHeading--twoLines-values: (
-  height: (116px, 450px),
+  height: (116px, 270px),
 );
 
 $HeroHeading-bg-colors: (
