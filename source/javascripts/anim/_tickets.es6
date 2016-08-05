@@ -2,13 +2,16 @@ class TicketsAnim {
   start() {
     const animArea = $('.TicketsAnim');
     const win = $(window);
+    /* two magic numbers that make it better */
+    const animStartOffset = 200;
+    const animEndOffset = 800;
     let screenHeight;
     let screenWidth;
     let animTop;
     let animHeight;
 
     let resizeCallback = () => {
-      animTop = animArea.offset().top;
+      animTop = animArea.offset().top - animStartOffset;
       animHeight = animArea.innerHeight();
       screenHeight = win.height();
       screenWidth = win.width();
@@ -16,7 +19,7 @@ class TicketsAnim {
 
     let scrollCallback = () => {
       const animStart = animTop + animHeight - screenHeight;
-      const animEnd   = animStart + 400;
+      const animEnd   = animStart + animEndOffset;
       let baseOffset;
       let multiplier = 2;
 
