@@ -3,13 +3,17 @@ $Speaker-values: (
 );
 
 $Speaker-name-values: (
-  font-size: (26px, 38px),
-  line-height: (36px, 48px)
+  font-size: (26px, 26px),
+  line-height: (36px, 36px)
 );
 
 $Speaker-title-values: (
   font-size: (14px, 18px),
   line-height: (24px, 28px)
+);
+
+$Speaker-info-values: (
+  padding: (0 5px 0 15px, 0 5px 0 30px)
 );
 
 .Speaker {
@@ -46,8 +50,8 @@ $Speaker-title-values: (
 }
 
 .Speaker-info {
+  @include responsive($Speaker-info-values);
   bottom: 25px;
-  padding: 0 5px 0 30px;
   position: absolute;
   z-index: 1;
 }
