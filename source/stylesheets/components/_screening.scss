@@ -1,7 +1,24 @@
+.Screening {
+  display: flex;
+  flex-direction: row;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .Screening-content {
+    width: 50%;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
 .Screening-videoWrapper {
   position: relative;
 
-  height: 600px;
+  height: 520px;
   overflow: hidden;
 
   &::before, &::after {
@@ -18,7 +35,11 @@
   &::before {
     z-index: 2;
 
-    background-image: linear-gradient(to bottom, transparent, $color-amaranth);
+    background-image: linear-gradient(to left, transparent, $color-amaranth);
+
+    @include mobile {
+      background-image: linear-gradient(to top, transparent, $color-amaranth);
+    }
   }
 
   &:after {

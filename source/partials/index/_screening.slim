@@ -1,20 +1,21 @@
-.Screening
-  .Screening-videoWrapper
-    video.Screening-video autoplay="true" loop="true" poster="/images/design-disruptors.gif"
-      source src="/videos/design_disruptors.mp4" type="video/mp4"
-  .Panel.amaranth
+.Screening.Panel.padded
+  .Panel.amaranth.Panel-content.Screening-content
     .Grid.four
       .Grid-title
-        .u-basePaddingBottomAlways
+        .u-smallPaddingBottomAlways
         h2.SectionHeading.white screening
 
-        .u-basePushBottom
+        .u-smallPushBottom
         hr.Separator.white
-        .u-basePushBottom
+        .u-smallPushBottom
 
         .Cage.large
           p.Text.base.white.u-serif Invision’s documentary Design Disruptors will be at Mirror Conf. Don’t miss it!
         .u-basePushBottom
 
         = link_to "Know more", data.links.design_disruptors, target: "_blank", class: "Button primary pink onColor"
-        .u-xLargePaddingBottom
+        .u-smallPaddingBottomAlways
+
+  .Screening-videoWrapper.Screening-content
+    video.Screening-video autoplay="true" loop="true" poster="/images/design-disruptors.gif"
+      source src="/videos/design_disruptors.mp4" type="video/mp4"
