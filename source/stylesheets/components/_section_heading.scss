@@ -13,6 +13,10 @@ $SectionHeading--small-values: (
   line-height: (40px, 110px),
 );
 
+$SectionHeading--tiny-values: (
+  line-height: (36px, 52px)
+);
+
 $SectionHeading--overlayed-values: (
   margin-bottom: (-25px, -75px),
 );
@@ -33,6 +37,11 @@ $SectionHeading--overlayed-values: (
 .SectionHeading.small {
   @include responsive($SectionHeading--small-values);
   @include font(largeHeading);
+}
+
+.SectionHeading.tiny {
+  @include responsive($SectionHeading--tiny-values);
+  @include font(heading);
 }
 
 .SectionHeading.overlayed {
