@@ -1,0 +1,149 @@
+- events:
+  - name: Networking
+    start: "10:00"
+    end: "10:30"
+    duration: half-hour
+    type: secondary
+
+  - name: Kyle Fieldler
+    start: "10:30"
+    end: "11:15"
+    duration: three-quarters
+    type: primary
+
+  - name: Coffee Break
+    start: "11:15"
+    end: "11:30"
+    duration: quarter-hour
+    type: secondary alternative
+
+  - name: Burocratik
+    start: "11:30"
+    end: "12:00"
+    duration: half-hour
+    type: primary
+
+  - name: Tibor Kranjc
+    start: "12:00"
+    end: "12:30"
+    duration: half-hour
+    type: primary
+
+  - name: Lunch
+    start: "12:30"
+    end: "14:30"
+    duration: hour
+    type: secondary alternative
+
+  - name: Networking
+    start: "14:30"
+    end: "15:00"
+    duration: half-hour
+    type: secondary
+
+  - name: João Granado
+    start: "15:00"
+    end: "15:30"
+    duration: half-hour
+    type: primary
+
+  - name: Sarah Drasner
+    start: "15:30"
+    end: "16:00"
+    duration: half-hour
+    type: primary
+
+  - name: Coffee Break
+    start: "16:00"
+    end: "16:15"
+    duration: quarter-hour
+    type: secondary alternative
+
+  - name: Dan Mall
+    start: "16:15"
+    end: "17:00"
+    duration: three-quarters
+    type: primary
+
+  - name: Design Disruptors
+    start: "17:00"
+    end: "18:00"
+    duration: hour
+    type: primary
+
+  - name: Closing
+    start: "18:00"
+    duration: half-hour
+    type: secondary alternative
+
+- events:
+  - name: Networking
+    start: "10:00"
+    end: "10:30"
+    duration: half-hour
+    type: secondary
+
+  - name: Léonie Watson
+    start: "10:30"
+    end: "11:15"
+    duration: three-quarters
+    type: primary
+
+  - name: Coffee Break
+    start: "11:15"
+    end: "11:30"
+    duration: quarter-hour
+    type: secondary alternative
+
+  - name: Bryant Chou
+    start: "11:30"
+    end: "12:00"
+    duration: half-hour
+    type: primary
+
+  - name: James Chudley
+    start: "12:00"
+    end: "12:30"
+    duration: half-hour
+    type: primary
+
+  - name: Lunch
+    start: "12:30"
+    end: "14:30"
+    duration: hour
+    type: secondary alternative
+
+  - name: Networking
+    start: "14:30"
+    end: "15:00"
+    duration: half-hour
+    type: secondary
+
+  - name: Tiago Pedras
+    start: "15:00"
+    end: "15:30"
+    duration: half-hour
+    type: primary
+
+  - name: Darius Kazemi
+    start: "15:30"
+    end: "16:00"
+    duration: half-hour
+    type: primary
+
+  - name: Coffee Break
+    start: "16:00"
+    end: "16:15"
+    duration: quarter-hour
+    type: secondary alternative
+
+  - name: Lea Verou
+    start: "16:15"
+    end: "17:00"
+    duration: three-quarters
+    type: primary
+
+  - name: Closing
+    start: "18:00"
+    duration: hour
+    type: secondary alternative

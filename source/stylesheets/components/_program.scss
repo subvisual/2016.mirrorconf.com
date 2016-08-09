@@ -1,0 +1,33 @@
+$ScheduleTable-values: (
+  padding: (100px 0, 120px 160px),
+);
+
+.ScheduleTable {
+  @include responsive($ScheduleTable-values);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: $color-white;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.ScheduleTable-day {
+  display: inline-block;
+  width: 50%;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.ScheduleTable-entry {
+  width: 100%;
+}
+
+.ScheduleTable-separator {
+  color: $color-charcoal-grey;
+}

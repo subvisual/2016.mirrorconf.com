@@ -1,0 +1,18 @@
+.ScheduleTable
+  - data.program.each_with_index do |item, index|
+    .ScheduleTable-day
+      h2.SectionHeading.small.blue.u-smallPushLeft-mobile = "day #{index + 1}"
+
+      .u-basePushBottom
+
+      - item.events.each do |event|
+        hr.ScheduleTable-separator
+
+        div class="Event #{event.duration}"
+          = event_time(event.start, event.end, mobile_only: index.odd?)
+          div
+            p class="Event-name #{event.type}" = event.name
+
+      - unless data.program.length - 1 == index
+        .u-hugePaddingBottom.u-mobile
+        .u-hugePaddingBottom.u-mobile

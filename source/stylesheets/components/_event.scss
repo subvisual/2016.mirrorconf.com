@@ -1,0 +1,76 @@
+$Event-name-primary: (
+  font-size: (22px, 32px),
+  line-height: (32px, 42px),
+);
+
+$Event-name-secondary: (
+  font-size: (14px, 18px),
+  line-height: (24px, 28px),
+  text-transform: uppercase,
+);
+
+$Event-name-text: (
+  'primary': $Event-name-primary,
+  'secondary': $Event-name-secondary,
+);
+
+// 35px per 15 minutes on mobile
+// 40px per 15 minutes on desktop
+$Event-duration-values: (
+  'quarter-hour': (
+    height: (35px, 40px)
+  ),
+  'half-hour': (
+    height: (70px, 80px)
+  ),
+  'three-quarters': (
+    height: (105px, 120px)
+  ),
+  'hour': (
+    height: (140px, 160px)
+  ),
+);
+
+@each $name, $values in $Event-duration-values {
+  .Event.#{$name} {
+    @include responsive($values);
+  }
+};
+
+.Event {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.Event :first-child {
+  min-width: 40%;
+}
+
+.Event-time {
+  @include responsive($Event-name-secondary);
+
+  color: $color-blue;
+  font-family: $font-family-alternative;
+
+  @include mobile {
+    padding-left: $space-small;
+  }
+}
+
+.Event-name {
+  color: $color-charcoal-grey;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+}
+
+.Event-name.alternative {
+  color: rgba($color-charcoal-grey, 0.5);
+  font-weight: $font-weight-regular;
+}
+
+@each $name, $values in $Event-name-text {
+  .Event-name.#{$name} {
+    @include responsive($values);
+  }
+}

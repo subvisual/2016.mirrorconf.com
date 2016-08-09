@@ -2,6 +2,9 @@
   url: '/about/'
   screen_reader_text: " Mirror Conf"
 
+- text: Schedule
+  url: '/schedule/'
+
 - text: Practical Details
   url: '/practical-details/'
   screen_reader_text: " about Mirror Conf"
