@@ -1,10 +1,11 @@
-.Screening.Panel.padded
-  .Panel.amaranth.Panel-content.Screening-content
-    .Grid.four
+.Screening.Panel.amaranth
+  .Grid.four.screening
+    .u-xLargePaddingBottom
+    .Panel
       .Grid-title
-        .u-smallPaddingBottomAlways
         h2.SectionHeading.white screening
 
+      .Grid-col
         .u-smallPushBottom
         hr.Separator.white
         .u-smallPushBottom
@@ -16,6 +17,7 @@
         = link_to "Know more", data.links.design_disruptors, target: "_blank", class: "Button primary pink onColor"
         .u-smallPaddingBottomAlways
 
-  .Screening-videoWrapper.Screening-content
-    video.Screening-video autoplay="true" loop="true" poster="/images/design-disruptors.gif"
-      source src="/videos/design_disruptors.mp4" type="video/mp4"
+    .Screening-content.right
+      .Screening-videoWrapper
+        video.Screening-video autoplay="true" loop="true" poster="/images/design-disruptors.gif"
+          source src="/videos/design_disruptors.mp4" type="video/mp4"
