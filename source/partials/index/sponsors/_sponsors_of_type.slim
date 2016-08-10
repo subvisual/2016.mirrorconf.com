@@ -1,6 +1,10 @@
-h3.SectionHeading.small.pink = type
-.u-basePushBottom
-.Flex.row.wrap.alignCenter
-  - data.sponsors.public_send(type).each do |sponsor|
-      = partial "index/sponsors/sponsor", locals: { sponsor: sponsor, type: type }
-.u-basePushBottom
+div class="Panel #{background}"
+  .Grid.four
+    .Grid-title
+      .u-basePaddingBottom
+      h3.SectionHeading.small.pink = type
+      .u-basePushBottom
+      .Flex.row.wrap.alignCenter
+        - data.sponsors.public_send(type).each do |sponsor|
+            = partial "index/sponsors/sponsor", locals: { sponsor: sponsor, type: type }
+      .u-basePaddingBottom

@@ -5,10 +5,13 @@
       h2.SectionHeading.grey sponsors
 
       .u-basePushBottom
-      = partial "index/sponsors/sponsors_of_type", locals: { type: :platinum }
-      = partial "index/sponsors/sponsors_of_type", locals: { type: :gold }
-      = partial "index/sponsors/sponsors_of_type", locals: { type: :stone }
 
-  .u-desktop
-    .u-hugePaddingBottom
-    .u-basePaddingBottom
+= partial "index/sponsors/sponsors_of_type",
+  locals: { type: :platinum, background: 'white'}
+= partial "index/sponsors/sponsors_of_type",
+  locals: { type: :gold, background: 'pale-grey'}
+= partial "index/sponsors/sponsors_of_type",
+  locals: { type: :stone, background: 'white' }
+
+.u-desktop
+  .u-basePaddingBottom
