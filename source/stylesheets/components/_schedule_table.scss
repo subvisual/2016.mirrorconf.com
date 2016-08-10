@@ -15,7 +15,7 @@ $ScheduleTable-values: (
   }
 }
 
-.ScheduleTable-day {
+.ScheduleTable-entry {
   display: inline-block;
   width: 50%;
 
@@ -24,10 +24,13 @@ $ScheduleTable-values: (
   }
 }
 
-.ScheduleTable-entry {
-  width: 100%;
+.ScheduleTable-day.mobilePadded {
+  @include desktop {
+    margin-left: 40%;
+  }
 }
 
 .ScheduleTable-separator {
   color: $color-charcoal-grey;
+  opacity: 0.5;
 }

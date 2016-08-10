@@ -1,7 +1,8 @@
 .ScheduleTable
   - data.program.each_with_index do |item, index|
-    .ScheduleTable-day
-      h2.SectionHeading.small.blue.u-smallPushLeft-mobile = "day #{index + 1}"
+    .ScheduleTable-entry
+      = schedule_table_day(index) do
+        h2.SectionHeading.small.blue.u-smallPushLeft-mobile = "day #{index + 1}"
 
       .u-basePushBottom
 
