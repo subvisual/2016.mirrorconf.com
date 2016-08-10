@@ -19,7 +19,12 @@ stone:
   - name: Balsamiq
     image: balsamiq.png
     url: https://balsamiq.com/
+
   - name: axure
     modifier: axure
     image: axure.png
     url: http://www.axure.com/
+
+  - name: edit
+    image: edit.png
+    url: http://edit.com.pt/

@@ -27,9 +27,10 @@
 
         .u-basePushBottom.u-desktop
         .Flex.column.u-serif.content
-          - data.nav.each do |item|
-            .u-smallPushBottom
+          - data.nav.each_with_index do |item, index|
             = nav_link item, classes: "Nav-smallLink Nav-footerLink"
+            - unless data.nav.length - 1 == index
+              .u-smallPushBottom
           .u-basePushBottom.u-desktop
       .u-basePushRight.u-basePushBottom
 
