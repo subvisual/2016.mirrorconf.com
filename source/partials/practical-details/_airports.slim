@@ -32,3 +32,28 @@
 
           .Flex-grow.Cage.largeAtMost.u-largePushBottom
             = partial "practical-details/airports/lis"
+
+  .Panel-content.Panel.pale-grey
+    .Flex.column.alignCenter
+      .u-hugePushBottom
+
+      .Cage.padded
+        .Cage.w250
+          = image_tag "tap@2x.png", class: "Img airport tap"
+
+        .u-smallPushBottom
+        h2.Text.blue.largeHeading.uppercase.strong flight discount
+        .u-basePushBottom
+        hr.Separator.blue
+
+        .Flex.row-desktop.column-mobile.spaceBetween.alignCenter-mobile
+          .Flex-grow.Cage.largeAtMost.u-largePushBottom
+            .u-basePushBottom
+            = partial "practical-details/airports/discount"
+
+          .u-largePushRight
+
+          .Flex-grow.Cage.largeAtMost
+            .u-basePushBottom.u-mobile
+            = image_tag "airplane@2x.png", class: "Img airport"
+            .u-largePushBottom
