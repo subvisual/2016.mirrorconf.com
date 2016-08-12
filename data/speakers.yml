@@ -15,14 +15,21 @@
 - name: Léonie Watson
   title: Accessibility Engineer
   picture: leonie.jpg
+  talk: "On CSS accessibility and drinking tea"
+  abstract: "When the web was new, design and structure were all mixed up together. Eventually we realised this was very messy, so we invented CSS and separated design from HTML. Everyone felt much better after this, and went and had a cup of tea. But while everyone was drinking tea (and not really paying attention), the line between design and structure began to get messy again. Things like the before/after pseudo-selectors made it possible for CSS to directly change content, and features like FlexBox push the concept of separation to breaking point. Conversely, CSS is being used as a development tool for visualising semantic information like role and state, when added to an interface using ARIA. In this talk Léonie will look at the changing relationship between design and structure, and what it means for accessibility mechanics in the browser. She will share CSS code examples and design patterns for solving common accessibility problems, so everyone can go and have another nice cup of tea."
 
 - name: Dan Mall
   title: Director at SuperFriendly
   picture: dan-mall.jpg
+  talk: "Proper etiquette for the advancement of design"
+  abstract: "Designing at your desk with Photoshop or HTML and CSS is easy, but getting your bosses and clients to give your work their stamp of approval is often quite a feat. In this presentation, Dan will share some stories of tools, methodologies, and non-traditional deliverables that can help you get the buy-in you need. Follow along to learn how to make everyone you work with say "please" and "thank you!""
 
 - name: James Chudley
   title: UX Director at Cxpartners
   picture: james-chudley.jpg
+  talk: "UX skills to pay the bills"
+  abstract: "I’ve been lucky enough to work with some wonderful UX’ers over the years but what was it about the best of the bunch that really made them stand out? What are the skills and attributes that you will need to develop yourself further as a UX professional? I’ll identify the skills & qualities that I believe you need to flourish as a UX consultant. Expect straight talking, examples from the coalface and practical tips that you’ll be able to use immediately."
+
 
 - name: Lea Verou
   title: Research Assistant at CSAIL, MIT
@@ -31,6 +38,8 @@
 - name: Sarah Drasner
   title: Manager, UX Design & Engineering
   picture: sarah-drasner.png
+  talk: "Innovative SVG animations"
+  abstract: "There are a ton of amazing benefits of working with SVGs: great support, resolution-independant, and scalable images that can reduce the needs for multiple HTTP requests. SVGs offer a navigable DOM that shine for animation and accessibility purposes. But SVGs are capable of so much more. In this session, we’ll manipulate vectors with a myriad of creative techniques, ranging from the practical, such as data visualization with D3 and React, to the delicate, such as imitating candle smoke with morphing path data. We'll go over how to increase engagement and performance in User Experience with examples and case studies. We’ll use SVGs as a window with clipPath, push the boundaries of the CPU with filters, and even combine techniques to create otherworldly effects."
 
 - name: Darius Kazemi
   title: Worker-Owner @ Feel Train
@@ -39,6 +48,8 @@
 - name: Bryant Chou
   title: CTO and co-founder of Webflow
   picture: bryant-chou.jpg
+  talk: "The future of Web Design"
+  abstract: "Web design is stuck in the past. Currently, a reliance on coding frameworks that inhibits creativity, or print software not built to handle today's responsive web have created a huge gap in what web designers of the future need. In this talk, we look through the progression of the web from the lens of an outsider, and peer into the future of what could be a shift in the way designers build for this ever changing medium."
 
 - name: João Granado
   title: Head of Applications @ Seegno
@@ -47,3 +58,6 @@
 - name: Tibor Kranjc
   title: Interaction Designer @ Ginetta
   picture: tibor-kranjc.png
+  talk: "Illustration as a means of identifying with a product"
+  abstract: "When done properly, illustration invokes emotion. With the world saturated in interfaces that are dissolving into the background, emotion is taking the front seat. Illustration and emotion add a personal touch, and users feel more comfortable, even at ease, with groundbreaking technology. Illustration is a great tool for communicating patterns to a user and helping them reach their goal or finishing their task. Illustration is used in ideation, conception and the final design of the product. Enhancing drawings and interfaces with animation doesn't only render the message clearer, but also emotionally charged - and therefore memorable. After all, a picture is worth a thousand words, right? While it may be argued that illustration is not a must-have, but a nice-to-have at best, it’s a feature that breathes personality and vibrance into a product. Illustration paves the way from an easy-to-use product to a user at ease."
+
