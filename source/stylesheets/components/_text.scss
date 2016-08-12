@@ -12,6 +12,10 @@ $Text-sizes: (small, base, large, heading, largeHeading);
   color: $color-white;
 }
 
+.Text.alternative {
+  font-family: $font-family-alternative;
+}
+
 .Text.strong {
   font-weight: bold;
 }

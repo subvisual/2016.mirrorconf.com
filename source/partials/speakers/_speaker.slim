@@ -1,4 +1,4 @@
-.SpeakerDesc id=speaker.anchor
+.SpeakerDesc id=speaker_id(speaker.name)
   h2.SectionHeading.overlayed.blue = speaker.name
   .Flex.row-desktop.column-mobile
     .Flex-noShrink
@@ -7,6 +7,12 @@
           .SpeakerPhoto.alt
             img.SpeakerPhoto-photo src="/images/speakers/#{speaker.picture}" alt=speaker.name
       .u-basePushBottom
+      .Flex.row.justifyEnd-desktop
+        .Flex.row.alignCenter.justifyCenter
+          - speaker_social_links(speaker).each_with_index do |link, index|
+            - unless index == 0
+              .u-smallPushRightAlways
+            = link
     .u-basePushRight
     .Flex.column
       .u-xLargePushBottom
@@ -17,4 +23,7 @@
       .Text.small.strong.grey.u-serif = speaker.talk
       .u-smallPushBottom
       .Text.small.grey.u-serif = speaker.abstract
-  .u-hugePushBottom
+      .u-basePushBottom
+      = link_to_event speaker.schedule, speaker.name,
+        class: 'Text blue alternative strong noUnderline'
+  .u-hugePaddingBottom

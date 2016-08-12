@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="16px" height="30px" viewBox="0 0 16 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
     <title>facebook</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="mirror-desktop" transform="translate(-1362.000000, -197.000000)" fill="#FFFFFF">
-            <path d="M1371.39074,206.816468 L1371.39825,204.232218 C1371.39825,202.885791 1371.49189,202.164805 1373.4207,202.164805 L1376.98996,202.164805 L1376.98996,197 L1371.87573,197 C1366.91316,197 1365.77088,199.563676 1365.77088,203.775257 L1365.77649,206.816468 L1362.0106,206.818316 L1362.0106,211.981211 L1365.77649,211.981211 L1365.77649,226.962485 L1371.39259,226.962485 L1371.39634,211.981211 L1376.49561,211.979363 L1377.04429,206.816468 L1371.39074,206.816468 L1371.39074,206.816468 Z" id="facebook"></path>
-        </g>
+    <g id="Speakers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,0 C6.71625,0 0,6.71625 0,15 C0,23.28375 6.71625,30 15,30 C23.28375,30 30,23.28375 30,15 C30,6.71625 23.28375,0 15,0 L15,0 Z M18.75,10 L17.0625,10 C16.39,10 16.25,10.27625 16.25,10.9725 L16.25,12.5 L18.75,12.5 L18.48875,15 L16.25,15 L16.25,23.75 L12.5,23.75 L12.5,15 L10,15 L10,12.5 L12.5,12.5 L12.5,9.615 C12.5,7.40375 13.66375,6.25 16.28625,6.25 L18.75,6.25 L18.75,10 L18.75,10 Z" id="facebook" fill="#0D41C2"></path>
     </g>
 </svg>

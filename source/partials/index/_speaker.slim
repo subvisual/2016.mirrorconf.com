@@ -1,7 +1,7 @@
-a.Speaker href="/speakers##{speaker.anchor}"
+a.Speaker href="/speakers##{speaker_id(speaker.name)}"
   .Speaker-inner
     .SpeakerPhoto
       img.SpeakerPhoto-photo src="/images/speakers/#{speaker.picture}" alt=speaker.name
     .Speaker-info
-      .Speaker-name = speaker.name
+      .Speaker-name = link_to_speaker(speaker.name, class: "Text white Text-link")
       .Speaker-title = speaker.title

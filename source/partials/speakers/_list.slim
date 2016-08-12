@@ -1,9 +1,7 @@
-.Panel.white
+.Panel.pale-grey
   .u-hugePaddingBottom
 
   .Grid.four
     - data.speakers.each do |speaker|
       .Grid-row
         = partial "speakers/speaker", locals: { speaker: speaker }
-
-  .u-hugePaddingBottom

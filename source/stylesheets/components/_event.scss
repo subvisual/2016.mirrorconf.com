@@ -52,9 +52,6 @@ $Event-duration-values: (
 .Event-time {
   @include responsive($Event-name-secondary);
 
-  color: $color-blue;
-  font-family: $font-family-alternative;
-
   @include mobile {
     padding-left: $space-small;
   }

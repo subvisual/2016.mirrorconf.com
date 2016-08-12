@@ -30,6 +30,7 @@
   justify-content: flex-end;
 }
 
+
 .Flex.spaceBetween {
   justify-content: space-between;
 }
@@ -67,6 +68,10 @@
 
   .Flex.justifyCenter-desktop {
     justify-content: center;
+  }
+
+  .Flex.justifyEnd-desktop {
+    justify-content: flex-end;
   }
 }
 
