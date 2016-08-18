@@ -62,8 +62,9 @@
   title: Worker-Owner @ Feel Train
   picture: darius.png
   anchor: darius-kazemi
-  talk: "TBA"
+  talk: "How to finish your side projects"
   bio: "Darius Kazemi is an internet artist under the moniker Tiny Subversions. His best known works are the Random Shopper (a program that bought him random stuff from Amazon each month) and Content, Forever (a tool to generate rambling thinkpieces of arbitrary length). He has a small army of Twitter and Tumblr bots that he builds because they make him laugh. He founded NaNoGenMo, where participants spend a month writing algorithms to generate 50,000 word novels, and Bot Summit, a yearly gathering of people who make art bots. He cofounded Feel Train, a creative technology cooperative."
+  abstract: "Abstract: Starting a side project is easy, but finishing it is hard. How can you find the time to finish? How can you get past your perfectionist instincts and actually release your creations? If you have folder on your computer called \"Projects\" that is full of half-finished work, this talk is for you."
 
 - name: Bryant Chou
   title: CTO and co-founder of Webflow
