@@ -77,8 +77,9 @@
   title: Head of Applications @ Seegno
   picture: joao-granado.jpg
   anchor: joao-granado
-  talk: "TBA"
+  talk: "Enhancing Developer & User experiences with Universal Applications"
   bio: "João is a software engineer at Seegno, where he leads the front end development team. He spends his time finding simple solutions to complex problems and specializes in large scale applications."
+  abstract: "Universal applications join the speed and flexibility of client-side applications, with the advantages of having pages fully rendered on the server, bringing large benefits both to the user and the developer. We will dive into the strengths and weaknesses of server-side rendering, and how it can be used to craft large content-based websites."
 
 - name: Tibor Kranjc
   title: Interaction Designer @ Ginetta
