@@ -42,6 +42,10 @@
   justify-content: space-between;
 }
 
+.Flex-noShrink {
+  flex-shrink: 0;
+}
+
 .Flex-grow {
   flex-grow: 1;
   width: 100%;
