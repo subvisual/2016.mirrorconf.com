@@ -11,6 +11,7 @@
 
 - text: Code of Conduct
   url: '/code-of-conduct/'
+  footer_only: true
 
 - text: Speakers
   url: '/speakers/'

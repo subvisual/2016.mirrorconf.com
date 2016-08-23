@@ -26,3 +26,11 @@
     rgba($color-amaranth, 0.9)
   );
 }
+
+.SpeakerPhoto.alt:after {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(252, 252, 252, 0.4),
+    rgba(13, 65, 194, 0.9)
+  );
+}

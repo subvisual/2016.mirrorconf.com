@@ -6,8 +6,9 @@
     nav.u-desktop.Flex.row.spaceBetween role="navigation"
       .u-basePushRight
       - data.nav.each do |item|
-        = nav_link item, current: current
-        .u-basePushRight
+        - unless item[:footer_only]
+          = nav_link item, current: current
+          .u-basePushRight
     .u-desktop style="width: 60px"
 
     .u-mobile#Burger.Burger
@@ -18,8 +19,9 @@
   .u-hideSpeech.u-mobile#Overlay.Overlay
     .Flex.column.alignCenter
       - data.nav.each do |item|
-        = nav_link item, current: current
-        .u-largePushBottom
+        - unless item[:footer_only]
+          = nav_link item, current: current
+          .u-largePushBottom
 
 - content_for :javascripts
   javascript:
