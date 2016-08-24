@@ -25,12 +25,12 @@
     type: primary
     url: "/speakers#burocratik"
 
-  - name: Tibor Kranjc
+  - name: James Chudley
     start: "12:00"
     end: "12:30"
     duration: half-hour
     type: primary
-    url: "/speakers#tibor-kranjc"
+    url: "/speakers#james-chudley"
 
   - name: Lunch
     start: "12:30"
@@ -110,12 +110,12 @@
     type: primary
     url: "/speakers#bryant-chou"
 
-  - name: James Chudley
+  - name: Tibor Kranjc
     start: "12:00"
     end: "12:30"
     duration: half-hour
     type: primary
-    url: "/speakers#james-chudley"
+    url: "/speakers#tibor-kranjc"
 
   - name: Lunch
     start: "12:30"
