@@ -29,6 +29,12 @@ $Text-sizes: (small, base, large, heading, largeHeading);
   text-decoration: none;
 }
 
+.Text-whiteLink {
+  font-weight: bold;
+  text-decoration: none;
+  color: $color-white;
+}
+
 .Text.noUnderline {
   text-decoration: none;
 }
