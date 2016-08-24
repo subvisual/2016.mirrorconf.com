@@ -11,7 +11,7 @@
 
         a.div class="Event #{event.duration}" href=event.url
           = event_time(event.start, event.end, mobile_only: index.odd?)
-          div id="#{speaker_id(event.name) if event.type == 'primary'}"
+          .u-smallPushRight id="#{speaker_id(event.name) if event.type == 'primary'}"
             p class="Event-name #{event.type}" = event.name
 
       - unless data.program.length - 1 == index

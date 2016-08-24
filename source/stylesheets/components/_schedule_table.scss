@@ -10,7 +10,7 @@ $ScheduleTable-values: (
   justify-content: center;
   background-color: $color-white;
 
-  @include mobile {
+  @include tablet {
     flex-direction: column;
   }
 }
@@ -19,7 +19,7 @@ $ScheduleTable-values: (
   display: inline-block;
   width: 50%;
 
-  @include mobile {
+  @include tablet {
     width: 100%;
   }
 }
