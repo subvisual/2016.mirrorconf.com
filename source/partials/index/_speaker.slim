@@ -3,5 +3,5 @@ a.Speaker href="/speakers##{speaker_id(speaker.name)}"
     .SpeakerPhoto
       img.SpeakerPhoto-photo src="/images/speakers/#{speaker.picture}" alt=speaker.name
     .Speaker-info
-      .Speaker-name = link_to_speaker(speaker.name, class: "Text white Text-link")
+      .Speaker-name = speaker.name
       .Speaker-title = speaker.title
