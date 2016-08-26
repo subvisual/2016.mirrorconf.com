@@ -4,16 +4,22 @@ platinum:
     url: http://ginetta.net/
 
 gold:
+  - name: Webflow
+    image: webflow.png
+    url: https://webflow.com/
+
+  - name: Seegno
+    image: seegno.png
+    url: http://seegno.com/
+
+  - name: Designer News
+    image: dn.png
+    url: https://www.designernews.co/
+
   - name: Landing.jobs
     image: landing.jobs.png
     modifier: landingjobs
     url: https://landing.jobs/
-  - name: Seegno
-    image: seegno.png
-    url: http://seegno.com/
-  - name: Designer News
-    image: dn.png
-    url: https://www.designernews.co/
 
 stone:
   - name: Balsamiq
@@ -28,3 +34,7 @@ stone:
   - name: edit
     image: edit.png
     url: http://edit.com.pt/
+
+  - name: danke
+    image: danke.png
+    url: http://www.danke.pt/

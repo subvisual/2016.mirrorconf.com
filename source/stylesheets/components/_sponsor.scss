@@ -8,24 +8,24 @@
 
 @include mobile {
   .Sponsor.platinum .Sponsor-logo {
-    height: 70px;
+    max-height: 70px;
   }
 
   .Sponsor.gold .Sponsor-logo {
-    height: 60px;
+    max-height: 60px;
   }
 
   .Sponsor.landingjobs .Sponsor-logo {
-    width: 279px;
-    height: 40px;
+    max-width: 279px;
+    max-height: 40px;
   }
 
   .Sponsor.stone .Sponsor-logo {
-    height: 50px;
+    max-height: 50px;
   }
 
   .Sponsor.axure .Sponsor-logo {
-    width: 279px;
-    height: 43px;
+    max-width: 279px;
+    max-height: 43px;
   }
 }

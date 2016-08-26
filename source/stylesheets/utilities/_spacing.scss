@@ -46,7 +46,6 @@ $spacings: (
     }
   }
 
-
   .u-#{$name}PushBottom-desktop {
     @include desktop {
       margin-bottom: $value;
@@ -74,4 +73,12 @@ $spacings: (
 
 .u-smallPushRightAlways {
   margin-right: $space-small;
+}
+
+.u-basePaddingRight {
+  padding-right: $space-base;
+
+  @include mobile {
+    padding-right: $space-base * 0.5;
+  }
 }
