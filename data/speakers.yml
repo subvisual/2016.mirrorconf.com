@@ -4,7 +4,7 @@
   bio: "Kyle leads a design team of about 30 designers at thoughtbot. He enjoys working through complex problems and coming up with simple solutions using tools such as research, design thinking, design sprints, and jobs-to-be-done to help him best understand what a product is trying to solve. He loves shipping early and iterating."
   talk: "Blurred Lines"
   abstract: "Should designers code? Should they generalize or specialize? As a community we constantly reiterate these same arguments. What makes a great team is when each member’s lines of responsibility blurs into that of others. At thoughtbot, designers have a wide range of responsibilities from business strategy to graphic design, to implementing a great user expense in the app. Kyle discusses why this has been successful for their teams and how designer and developer lines blur together at thoughtbot."
-  schedule: "day 1 - 10:30 > 11:15"
+  schedule: "day 1 - 10:00 > 11:00"
   links:
     dribbble: https://dribbble.com/kylefiedler
     twitter: https://twitter.com/kylefiedler
@@ -15,7 +15,7 @@
   picture: burocratik.png
   bio: "Founded in 2005, Bürocratik is an international award winning Studio specialized on Branding and Digital with an absurd passion on typography. Seven designers and engineers driven by exceptional experiences and craftsmanship."
   talk: "TBA"
-  schedule: "day 1 - 11:30 > 12:00"
+  schedule: "day 1 - 11:30 > 12:15"
   links:
     behance: https://www.behance.net/burocratik
     facebook: https://www.facebook.com/Burocratik/
@@ -26,9 +26,9 @@
   title: Interaction Designer @ Ginetta
   picture: tibor-kranjc.png
   talk: "Illustration as a means of identifying with a product"
-  bio: "I became an illustrator by chance and a designer by choice.<br>The path from Ljubljana, Slovenia, to Zürich, Switzerland, from graffiti artist to art director to UX designer taught me very early on that a right team will turn a good idea into a brilliant one, and teamwork was all I knew. I uncovered along the way the secret to creativity – factoring play into work – and made it a rule to work with people who inspire me, which I’ve followed ever since.<br>I use two tracks to design interfaces: chaos and structure. Chaos sets my imagination to innovation mode. Structure helps me make sense of the research and renders ideas tangible. The trick is to constantly keep them in check. Taking on Design-Driven Development approach, I joined the powerful, cutting-edge team at Zürich-based Ginetta in 2014, making the user my client and simplicity my tool."
+  bio: "I became an illustrator by chance and a designer by choice.<br><br>The path from Ljubljana, Slovenia, to Zürich, Switzerland, from graffiti artist to art director to UX designer taught me very early on that a right team will turn a good idea into a brilliant one, and teamwork was all I knew. I uncovered along the way the secret to creativity – factoring play into work – and made it a rule to work with people who inspire me, which I’ve followed ever since.<br><br>I use two tracks to design interfaces: chaos and structure. Chaos sets my imagination to innovation mode. Structure helps me make sense of the research and renders ideas tangible. The trick is to constantly keep them in check. Taking on Design-Driven Development approach, I joined the powerful, cutting-edge team at Zürich-based Ginetta in 2014, making the user my client and simplicity my tool."
   abstract: "When done properly, illustration invokes emotion. With the world saturated in interfaces that are dissolving into the background, emotion is taking the front seat. Illustration and emotion add a personal touch, and users feel more comfortable, even at ease, with groundbreaking technology. Illustration is a great tool for communicating patterns to a user and helping them reach their goal or finishing their task. Illustration is used in ideation, conception and the final design of the product. Enhancing drawings and interfaces with animation doesn't only render the message clearer, but also emotionally charged - and therefore memorable. After all, a picture is worth a thousand words, right? While it may be argued that illustration is not a must-have, but a nice-to-have at best, it’s a feature that breathes personality and vibrance into a product. Illustration paves the way from an easy-to-use product to a user at ease."
-  schedule: "day 1 - 12:00 > 12:30"
+  schedule: "day 1 - 12:15 > 13:00"
   links:
     twitter: https://twitter.com/herrkranz
     web: http://ginetta.net/
@@ -39,7 +39,7 @@
   talk: "Enhancing Developer & User experiences with Universal Applications"
   bio: "João is a software engineer at Seegno, where he leads the front end development team. He spends his time finding simple solutions to complex problems and specializes in large scale applications."
   abstract: "Universal applications join the speed and flexibility of client-side applications, with the advantages of having pages fully rendered on the server, bringing large benefits both to the user and the developer. We will dive into the strengths and weaknesses of server-side rendering, and how it can be used to craft large content-based websites."
-  schedule: "day 1 - 15:00 > 15:30"
+  schedule: "day 1 - 15:00 > 15:45"
   links:
     github: https://github.com/joaogranado
     twitter: https://twitter.com/sterile_a
@@ -50,7 +50,7 @@
   talk: "Innovative SVG animations"
   bio: "Sarah is an award-winning Manager of UX Design & Engineering at Trulia and staff writer at CSS-Tricks. She has worked for 15 years as a web developer and designer, and at points worked as a Scientific Illustrator and a Undergraduate Professor. In her spare time, she enjoys welding together pieces of the DOM."
   abstract: "There are a ton of amazing benefits of working with SVGs: great support, resolution-independant, and scalable images that can reduce the needs for multiple HTTP requests. SVGs offer a navigable DOM that shine for animation and accessibility purposes. But SVGs are capable of so much more. In this session, we’ll manipulate vectors with a myriad of creative techniques, ranging from the practical, such as data visualization with D3 and React, to the delicate, such as imitating candle smoke with morphing path data. We'll go over how to increase engagement and performance in User Experience with examples and case studies. We’ll use SVGs as a window with clipPath, push the boundaries of the CPU with filters, and even combine techniques to create otherworldly effects."
-  schedule: "day 1 - 15:30 > 16:00"
+  schedule: "day 1 - 15:45 > 16:30"
   links:
     codepen: http://codepen.io/sdras/
     twitter: https://twitter.com/sarah_edo
@@ -62,7 +62,7 @@
   talk: "Proper etiquette for the advancement of design"
   bio: "DAN MALL is a creative director and advisor from Philly. He’s the director of SuperFriendly, a design collaborative that brings exquisite creative direction & design to the world’s most important and interesting organizations. Dan is an enthralled husband & dad and co-founder of Typedia (an encyclopedia for typefaces) and Businessology (a podcast and workshop series teaching designers how to run better businesses). He writes about design and other issues on Twitter and on his industry-recognized site, danielmall.com."
   abstract: "Designing at your desk with Photoshop or HTML and CSS is easy, but getting your bosses and clients to give your work their stamp of approval is often quite a feat. In this presentation, Dan will share some stories of tools, methodologies, and non-traditional deliverables that can help you get the buy-in you need. Follow along to learn how to make everyone you work with say \"please\" and \"thank you!\""
-  schedule: "day 1 - 16:15 > 17:00"
+  schedule: "day 1 - 17:00 > 18:00"
   links:
     twitter: https://twitter.com/danielmall
     web: http://danielmall.com/
@@ -71,8 +71,9 @@
   title: Accessibility Engineer
   picture: leonie.jpg
   talk: "On CSS accessibility and drinking tea"
+  bio: "Léonie Watson (AKA Tink) began using the internet in 1993, turned it into a web design career in 1997, and (despite losing her eyesight along the way) has been enjoying herself thoroughly ever since.<br><br>Léonie is Communications director and Principal engineer at The Paciello Group (TPG), and also works with Government Digital Service (GDS) on the GOV.UK platform.<br><br>As a member of the W3C Advisory Board, and co-chair of the W3C Web Platform WG (working on specs like HTML5), Léonie is closely involved with the web standards community. She is frequently asked to talk about web standards and/or accessibility at conferences.<br><br>In her spare time Léonie blogs on tink.uk, writes for tech journals like Smashing magazine, SitePoint.com and Net magazine. She also loves cooking, dancing and drinking tequila (although not necessarily in that order)."
   abstract: "When the web was new, design and structure were all mixed up together. Eventually we realised this was very messy, so we invented CSS and separated design from HTML. Everyone felt much better after this, and went and had a cup of tea. But while everyone was drinking tea (and not really paying attention), the line between design and structure began to get messy again. Things like the before/after pseudo-selectors made it possible for CSS to directly change content, and features like FlexBox push the concept of separation to breaking point. Conversely, CSS is being used as a development tool for visualising semantic information like role and state, when added to an interface using ARIA. In this talk Léonie will look at the changing relationship between design and structure, and what it means for accessibility mechanics in the browser. She will share CSS code examples and design patterns for solving common accessibility problems, so everyone can go and have another nice cup of tea."
-  schedule: "day 2 - 10:30 > 11:15"
+  schedule: "day 2 - 10:00 > 11:00"
   links:
     github: https://github.com/LJWatson
     twitter: https://twitter.com/LeonieWatson
@@ -84,7 +85,7 @@
   talk: "The future of Web Design"
   bio: "Bryant Chou is a serial entrepreneur and founder of two companies that have transformed the mobile advertising and web publishing space. With a background in computer engineering and music, he's constantly finding the intersection between art and engineering. Bryant currently serves as the CTO and co-founder of Webflow, based in San Francisco, CA."
   abstract: "Web design is stuck in the past. Currently, a reliance on coding frameworks that inhibits creativity, or print software not built to handle today's responsive web have created a huge gap in what web designers of the future need. In this talk, we look through the progression of the web from the lens of an outsider, and peer into the future of what could be a shift in the way designers build for this ever changing medium."
-  schedule: "day 2 - 11:30 > 12:00"
+  schedule: "day 2 - 11:30 > 12:15"
   links:
     twitter: https://twitter.com/bryantchou
     web: http://brryant.com/
@@ -95,7 +96,7 @@
   talk: "UX skills to pay the bills"
   bio: "James Chudley is a User Experience Director at one of the UK's leading UX consultancies having been an IA & UX practitioner for 18 years. He leads large scale UX research and design teams on projects for high profile global commercial clients. He co-wrote 'Smashing UX Design' & authored \"Usability of Web Photos\" and has spoken at events such as UXPA, IXDA, UPA, FOWD, NUX, UXCambridge, UXPA and co-founded UXBristol."
   abstract: "I’ve been lucky enough to work with some wonderful UX’ers over the years but what was it about the best of the bunch that really made them stand out? What are the skills and attributes that you will need to develop yourself further as a UX professional? I’ll identify the skills & qualities that I believe you need to flourish as a UX consultant. Expect straight talking, examples from the coalface and practical tips that you’ll be able to use immediately."
-  schedule: "day 2 - 12:00 > 12:30"
+  schedule: "day 2 - 12:15 > 13:00"
   links:
     twitter: https://twitter.com/chudders
     web: https://www.cxpartners.co.uk/
@@ -105,7 +106,7 @@
   picture: tiago-pedras.jpg
   bio: "Tiago Pedras is a web design teacher and Digital Director at Surreal, a branding and strategic marketing agency. Working with the web since 1998, in 2007 he founded his own web design studio TPWD in Oporto, Portugal (later acquired by Surreal) and has been teaching all about web since 2006 at ESAD, Matosinhos School of Art and Design."
   talk: "TBA"
-  schedule: "day 2 - 15:00 > 15:30"
+  schedule: "day 2 - 15:00 > 15:45"
   links:
     behance: https://www.behance.net/tiagopedras
     twitter: https://twitter.com/tiagopedras
@@ -117,7 +118,7 @@
   talk: "How to finish your side projects"
   bio: "Darius Kazemi is an internet artist under the moniker Tiny Subversions. His best known works are the Random Shopper (a program that bought him random stuff from Amazon each month) and Content, Forever (a tool to generate rambling thinkpieces of arbitrary length). He has a small army of Twitter and Tumblr bots that he builds because they make him laugh. He founded NaNoGenMo, where participants spend a month writing algorithms to generate 50,000 word novels, and Bot Summit, a yearly gathering of people who make art bots. He cofounded Feel Train, a creative technology cooperative."
   abstract: "Abstract: Starting a side project is easy, but finishing it is hard. How can you find the time to finish? How can you get past your perfectionist instincts and actually release your creations? If you have folder on your computer called \"Projects\" that is full of half-finished work, this talk is for you."
-  schedule: "day 2 - 15:30 > 16:00"
+  schedule: "day 2 - 15:45 > 16:30"
   links:
     twitter: https://twitter.com/tinysubversions
     web: http://tinysubversions.com/
@@ -127,7 +128,7 @@
   picture: lea-verou.jpg
   talk: "TBA"
   bio: "Lea is currently busy doing research in Human-Computer Interaction at MIT CSAIL. She has previously written a bestselling CSS book for O’Reilly (CSS Secrets) and worked as a Developer Advocate at W3C. She has a long-standing passion for open web standards, and is one of the few Invited Experts in the CSS Working Group. Lea has also started several popular open source projects and web applications, such as Prism, Dabblet and -prefix-free and maintains a technical blog at lea.verou.me. Despite her academic pursuits in Computer Science, Lea is one of the few misfits who love code and design equally."
-  schedule: "day 2 - 16:15 > 17:00"
+  schedule: "day 2 - 17:00 > 18:00"
   links:
     github: https://github.com/leaverou
     twitter: https://twitter.com/LeaVerou

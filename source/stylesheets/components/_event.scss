@@ -16,18 +16,20 @@ $Event-name-text: (
 
 // 35px per 15 minutes on mobile
 // 40px per 15 minutes on desktop
+$Event-duration-mobile: 20px;
+$Event-duration-desktop: 30px;
 $Event-duration-values: (
   'quarter-hour': (
-    height: (35px, 40px)
+    height: ($Event-duration-mobile, $Event-duration-desktop)
   ),
   'half-hour': (
-    height: (70px, 80px)
+    height: ($Event-duration-mobile * 2, $Event-duration-desktop * 2)
   ),
   'three-quarters': (
-    height: (105px, 120px)
+    height: ($Event-duration-mobile * 3, $Event-duration-desktop * 3)
   ),
   'hour': (
-    height: (140px, 160px)
+    height: ($Event-duration-mobile * 4, $Event-duration-desktop * 4)
   ),
 );
 
