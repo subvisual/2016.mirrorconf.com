@@ -78,10 +78,12 @@
     type: primary
     url: "#screening"
 
-  - name: Closing
+  - name: Ginetta Gin Party
     start: "19:30"
     duration: half-hour
-    type: secondary alternative
+    type: primary
+    subtitle: sponsored by
+    image: "sponsors/ginetta.png"
 
 - events:
   - name: Check-in & Networking

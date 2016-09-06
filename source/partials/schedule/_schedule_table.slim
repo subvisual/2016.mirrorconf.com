@@ -1,5 +1,10 @@
 .ScheduleTable
   - data.program.each_with_index do |item, index|
+    - if index > 0
+      .u-hugePaddingBottom.u-mobile
+      .u-hugePaddingBottom.u-mobile
+      .u-hugePaddingBottom.u-mobile
+
     .ScheduleTable-entry
       = schedule_table_day(index) do
         h2.SectionHeading.small.blue.u-smallPushLeft-mobile = "day #{index + 1}"
@@ -11,9 +16,17 @@
 
         a.div class="Event #{event.duration}" href=event.url
           = event_time(event.start, event.end, mobile_only: index.odd?)
-          .u-smallPushRight id="#{speaker_id(event.name) if event.type == 'primary'}"
+
+          .u-smallPushRight
+
+          div id="#{speaker_id(event.name) if event.type == 'primary'}"
             p class="Event-name #{event.type}" = event.name
 
-      - unless data.program.length - 1 == index
-        .u-hugePaddingBottom.u-mobile
-        .u-hugePaddingBottom.u-mobile
+            - if event.subtitle && event.image
+              .u-xSmallPushBottom
+              p class="Event-subtitle" = event.subtitle
+              .u-xSmallPushBottom
+              = image_tag event.image, class: "Event-logo"
+
+      .u-xLargePushBottom.u-desktop
+      .u-hugePaddingBottom.u-mobile

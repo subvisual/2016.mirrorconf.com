@@ -14,8 +14,6 @@ $Event-name-text: (
   'secondary': $Event-name-secondary,
 );
 
-// 35px per 15 minutes on mobile
-// 40px per 15 minutes on desktop
 $Event-duration-mobile: 20px;
 $Event-duration-desktop: 30px;
 $Event-duration-values: (
@@ -74,4 +72,14 @@ $Event-duration-values: (
   .Event-name.#{$name} {
     @include responsive($values);
   }
+}
+
+.Event-subtitle {
+  @include font;
+  font-family: $font-family-serif;
+  color: $color-charcoal-grey;
+}
+
+.Event-logo {
+  max-height: 50px;
 }
