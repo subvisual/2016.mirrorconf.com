@@ -82,7 +82,7 @@
     start: "19:30"
     duration: half-hour
     type: primary
-    subtitle: sponsored by
+    subtitle: powered by
     image: "sponsors/ginetta.png"
 
 - events:
