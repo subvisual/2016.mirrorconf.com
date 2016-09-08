@@ -105,8 +105,9 @@
 - name: Tiago Pedras
   title: Digital Director at Surreal
   picture: tiago-pedras.jpg
+  talk: "We the Community"
   bio: "Tiago Pedras is a web design teacher and Digital Director at Surreal, a branding and strategic marketing agency. Working with the web since 1998, in 2007 he founded his own web design studio TPWD in Oporto, Portugal (later acquired by Surreal) and has been teaching all about web since 2006 at ESAD, Matosinhos School of Art and Design."
-  talk: "TBA"
+  abstract: "As an industry and a community, we web designers aren’t advancing as fast as we should. Design has shifted from methodology to methodology teaching us to consider many aspects of the usage experience. Technology itself brought us many advances and with it new challenges to solve everyday. But humans on their hand, the users, the designers, the developers, their clients, haven’t changed all that much. Expectations are sometimes hard to manage. What can we do to clarify our role as the craftsmen of the future?"
   schedule: "day 2 - 15:00 > 15:45"
   links:
     behance: https://www.behance.net/tiagopedras
