@@ -1,8 +1,14 @@
 - events:
   - name: Check-in & Networking
     start: "9:00"
+    end: "9:45"
+    duration: three-quarters
+    type: secondary
+
+  - name: Opening
+    start: "9:45"
     end: "10:00"
-    duration: hour
+    duration: quarter-hour
     type: secondary
 
   - name: Kyle Fiedler
@@ -88,8 +94,14 @@
 - events:
   - name: Check-in & Networking
     start: "9:00"
+    end: "9:45"
+    duration: three-quarters
+    type: secondary
+
+  - name: Opening
+    start: "9:45"
     end: "10:00"
-    duration: hour
+    duration: quarter-hour
     type: secondary
 
   - name: Léonie Watson
