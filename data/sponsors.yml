@@ -41,7 +41,7 @@ stone:
 
   - name: Bicafé
     image: bicafe.png
-     url: https://www.bicafecapsulas.com/
+    url: https://www.bicafecapsulas.com/
 
   - name: BloomIdea
     image: bloomidea.png
