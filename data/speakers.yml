@@ -46,10 +46,10 @@
     twitter: https://twitter.com/sterile_a
 
 - name: Sarah Drasner
-  title: Manager, UX Design & Engineering
+  title: Consultant and Staff writer at CSS-Tricks
   picture: sarah-drasner.png
   talk: "Innovative SVG animations"
-  bio: "Sarah is an award-winning Manager of UX Design & Engineering at Trulia and staff writer at CSS-Tricks. She has worked for 15 years as a web developer and designer, and at points worked as a Scientific Illustrator and a Undergraduate Professor. In her spare time, she enjoys welding together pieces of the DOM."
+  bio: "Sarah is an award-winning Manager of UX Design & Engineering and consultant and staff writer at CSS-Tricks. She has worked for 15 years as a web developer and designer, and at points worked as a Scientific Illustrator and a Undergraduate Professor. In her spare time, she enjoys welding together pieces of the DOM."
   abstract: "There are a ton of amazing benefits of working with SVGs: great support, resolution-independant, and scalable images that can reduce the needs for multiple HTTP requests. SVGs offer a navigable DOM that shine for animation and accessibility purposes. But SVGs are capable of so much more. In this session, we’ll manipulate vectors with a myriad of creative techniques, ranging from the practical, such as data visualization with D3 and React, to the delicate, such as imitating candle smoke with morphing path data. We'll go over how to increase engagement and performance in User Experience with examples and case studies. We’ll use SVGs as a window with clipPath, push the boundaries of the CPU with filters, and even combine techniques to create otherworldly effects."
   schedule: "day 1 - 15:45 > 16:30"
   links:
