@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="16px" height="30px" viewBox="0 0 16 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
-    <title>facebook</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="mirror-desktop" transform="translate(-1362.000000, -197.000000)" fill="#FFFFFF">
-            <path d="M1371.39074,206.816468 L1371.39825,204.232218 C1371.39825,202.885791 1371.49189,202.164805 1373.4207,202.164805 L1376.98996,202.164805 L1376.98996,197 L1371.87573,197 C1366.91316,197 1365.77088,199.563676 1365.77088,203.775257 L1365.77649,206.816468 L1362.0106,206.818316 L1362.0106,211.981211 L1365.77649,211.981211 L1365.77649,226.962485 L1371.39259,226.962485 L1371.39634,211.981211 L1376.49561,211.979363 L1377.04429,206.816468 L1371.39074,206.816468 L1371.39074,206.816468 Z" id="facebook"></path>
-        </g>
-    </g>
-</svg>
+<svg width="16" height="30" viewBox="0 0 16 30" xmlns="http://www.w3.org/2000/svg"><title>facebook</title><path d="M9.39 9.816l.008-2.584c0-1.346.094-2.067 2.023-2.067h3.569V0H9.876C4.913 0 3.77 2.564 3.77 6.775l.005 3.041-3.765.002v5.163h3.765v14.981h5.617l.003-14.98 5.1-.003.548-5.163H9.391z" fill="#FFF" fill-rule="evenodd"/></svg>
