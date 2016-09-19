@@ -39,6 +39,10 @@ stone:
     image: danke.png
     url: http://www.danke.pt/
 
+  - name: Bicafé
+    image: bicafe.png
+     url: https://www.bicafecapsulas.com/
+
   - name: BloomIdea
     image: bloomidea.png
     url: http://bloomidea.com/en
