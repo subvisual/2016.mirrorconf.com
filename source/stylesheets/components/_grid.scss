@@ -9,6 +9,10 @@ $Grid--four-minus-five-mobile: $Grid--four-col-mobile - $Grid--five-col-mobile;
 $Grid--four-col-values: (
   width: (300px - $Grid-gutter * 2, 375px - $Grid-gutter * 2),
 );
+$Grid--fourSquare-col-values: (
+  width: (300px - $Grid-gutter * 2, 375px - $Grid-gutter * 2),
+  height: (300px - $Grid-gutter * 2, 375px - $Grid-gutter * 2),
+);
 $Grid--five-col-values: (
   width: (250px - $Grid-gutter * 2, 250px - $Grid-gutter * 2),
 );
@@ -35,6 +39,7 @@ $Grid-min-padding-mobile: 40px;
 
 .Grid-col,
 .Grid-col3,
+.Grid-square,
 .Grid-wideCol,
 .Grid-wideCol3 {
   vertical-align: top;
@@ -102,6 +107,10 @@ $Grid-min-padding-mobile: 40px;
   .Grid-wideCol,
   .Grid-wideCol3 {
     @include responsive($Grid--four-col-values);
+  }
+
+  .Grid-col.square {
+    @include responsive($Grid--fourSquare-col-values);
   }
 
   @for $i from 1 through 4 {

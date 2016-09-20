@@ -1,0 +1,15 @@
+.Gallery {
+  @extend .Grid;
+  @extend .Grid.four;
+}
+
+.Gallery-item {
+  @extend .Grid-col;
+  @extend .Grid-col.square;
+
+  background-size: cover;
+}
+
+.Gallery-item.really.important.rules {
+  margin-bottom: $space-small;
+}
